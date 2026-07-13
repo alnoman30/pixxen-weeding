@@ -1,0 +1,2568 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wedding Service</title>
+  <!-- Splide CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-white">
+
+  <nav class="bg-[#FBF7F6] border-b border-[#EAE7E6]">
+    <div class="mx-auto">
+      <div class="flex items-center justify-between h-12">
+        <div class="flex items-center sm:gap-4 gap-3">
+          <!-- Desktop Sidebar Button -->
+          <button id="desktop-sidebar" aria-label="Toggle menu"
+            class=" hidden lg:block text-green1 hover:text-green2 xl:px-19 md:px-6 py-5 bg-[#F4EDDA] hover:bg-[#E7D4A6] cursor-pointer transition-colors"
+            aria-label="Toggle menu">
+            <svg width="42" height="8" viewBox="0 0 42 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="42" height="2" fill="#36432A" />
+              <rect y="6" width="42" height="2" fill="#36432A" />
+            </svg>
+
+
+
+          </button>
+          <!-- Mobile Hamburger -->
+          <button id="mobile-menu-toggle"
+            class="mobile-hambergur-bg-salon lg:hidden text-white hover:text-green1 p-2 transition-colors bg-[#F4EDDA]"
+            aria-label="Toggle mobile menu">
+            <svg width="42" height="8" viewBox="0 0 42 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="42" height="2" fill="#36432A" />
+              <rect y="6" width="42" height="2" fill="#36432A" />
+            </svg>
+
+
+          </button>
+          <a href="index.html" class="flex items-center">
+            <!-- replace with your logo img -->
+            <img src="assets/images/salon-pixxen-logo.svg" alt="Pixxen" class="img-fluid sm:w-auto w-[136px]">
+          </a>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden lg:flex items-center space-x-8">
+
+          <!-- ====== SERVICES DROPDOWN ====== -->
+          <div class="desktop-dropdown">
+            <a href="#services"
+              class="text-[#36432A] hover:text-[#36432A] transition-colors text-base font-medium desktop-dropdown-toggle">
+              SERVICES <span class="desktop-dropdown-icon ml-1">+</span>
+            </a>
+
+            <!-- Mega panel: list LEFT + grid RIGHT -->
+            <div class="desktop-dropdown-menu">
+
+              <!-- LEFT: service items -->
+              <ul class="dropdown-service-list">
+                <li>
+                  <a href="mobile-app-design.html">
+                    <span class="service-icon">
+                      <!-- Mobile icon -->
+                      <img src="assets/images/dropdownicon1.svg" class="img-fluid" alt="dropdown-icon">
+                    </span>
+                    MOBILE APP DESIGN
+                  </a>
+                </li>
+                <li>
+                  <a href="dashboard-design.html">
+                    <span class="service-icon">
+                      <!-- Dashboard/pie icon -->
+                      <img src="assets/images/dropdownicon2.svg" class="img-fluid" alt="dropdown-icon">
+                    </span>
+                    DASHBOARD DESIGN
+                  </a>
+                </li>
+                <li>
+                  <a href="website-design.html">
+                    <span class="service-icon">
+                      <!-- Monitor icon -->
+                      <img src="assets/images/dropdownicon3.svg" class="img-fluid" alt="dropdown-icon">
+                    </span>
+                    WEBSITE DESIGN
+                  </a>
+                </li>
+                <li>
+                  <a href="web-application-design.html">
+                    <span class="service-icon">
+                      <!-- Laptop icon -->
+                      <img src="assets/images/dropdownicon4.svg" class="img-fluid" alt="dropdown-icon">
+                    </span>
+                    WEB APP DESIGN
+                  </a>
+                </li>
+                <li>
+                  <a href="saas-design.html">
+                    <span class="service-icon">
+                      <!-- Desktop/screen icon -->
+                      <img src="assets/images/dropdownicon5.svg" class="img-fluid" alt="dropdown-icon">
+                    </span>
+                    SAAS DESIGN
+                  </a>
+                </li>
+                <li>
+                  <a href="branding-design.html">
+                    <span class="service-icon">
+                      <!-- Brand/star icon -->
+                      <img src="assets/images/dropdownicon6.svg" class="img-fluid" alt="dropdown-icon">
+                    </span>
+                    BRANDING
+                  </a>
+                </li>
+              </ul>
+
+              <!-- right: items -->
+              <div class="flex items-end">
+                <img src="assets/images/dropdown-shape.svg" alt="">
+              </div>
+
+            </div>
+            <!-- end .desktop-dropdown-menu -->
+          </div>
+          <!-- ====== end SERVICES ====== -->
+
+          <a href="case-study.html"
+            class="text-[#36432A] hover:text-[#36432A] transition-colors text-base font-medium">CASE STUDIES</a>
+          <a href="about.html"
+            class="text-[#36432A] hover:text-[#36432A] transition-colors text-base font-medium">ABOUT</a>
+          <a href="blog.html"
+            class="text-[#36432A] hover:text-[#36432A] transition-colors text-base font-medium">BLOG</a>
+          <a href="contact.html"
+            class="text-[#36432A] hover:text-[#36432A] transition-colors text-base font-medium">Contact</a>
+        </div>
+
+        <!-- Desktop Buttons -->
+        <div class="hidden lg:flex items-center">
+          <a href="contact.html"
+            class="hidden mega-reveal-btn relative overflow-hidden cursor-pointer sm:block xl:px-12 md:px-5 py-3 text-white border border-[#E7D4A6]  transition-all font-medium">
+            <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
+              <span class="t-up text-base  font-medium text-[#36432A] uppercase">OUR Contact</span>
+              <span class="t-down text-base  font-medium text-[#36432A] uppercase">OUR Contact</span>
+            </div>
+          </a>
+          <a href="contact.html"
+            class="xl:px-12 md:px-5 mega-reveal-btn relative overflow-hidden cursor-pointer py-3 bg-[#BD8600] text-white transition-colors font-bold">
+            <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
+              <span class="t-up text-base  font-medium text-white uppercase">Let’s Connect</span>
+              <span class="t-down text-base  font-medium text-white uppercase">Let’s Connect</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- Mobile LET'S CONNECT -->
+        <a href="contact.html"
+          class="lg:hidden px-4 sm:px-5 mobile-letconnect mega-reveal-btn relative overflow-hidden cursor-pointer py-4 sm:py-4 bg-[#BD8600] text-white transition-colors font-bold">
+          <div class="text-mask sm:h-5 h-4 overflow-hidden flex flex-col">
+            <span class="t-up text-sm  font-medium text-white uppercase">OUR Let’s Connect</span>
+            <span class="t-down text-sm  font-medium text-white uppercase">OUR Let’s Connect</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- ====================== MOBILE MENU (2-panel) ====================== -->
+    <!-- Dark overlay -->
+    <div id="mobile-overlay" class="mobile-overlay"></div>
+
+    <!-- Wrapper holds both panels -->
+    <div id="mobile-menu-wrapper" class="mobile-menu-wrapper">
+
+      <!-- PANEL 1: Main Menu -->
+      <div id="mm-main" class="mm-panel mm-main">
+        <div class="mm-main-header">
+          <span class="mm-title">Menu</span>
+          <button id="mm-close" class="mm-close-btn" aria-label="Close menu">
+
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"
+                fill="white" />
+            </svg>
+
+          </button>
+        </div>
+
+        <ul class="mm-nav-list">
+          <li>
+            <!-- SERVICES: opens panel 2 -->
+            <button id="mm-services-trigger" class="mm-nav-link w-full text-left"
+              style="background:none;border:none;cursor:pointer;">
+              SERVICES
+              <span class="mm-plus">+</span>
+            </button>
+          </li>
+          <li><a href="case-study.html" class="mm-nav-link">case studies</a></li>
+          <li><a href="about.html" class="mm-nav-link">about</a></li>
+          <li><a href="blog.html" class="mm-nav-link">blog</a></li>
+          <li><a href="contact.html" class="mm-nav-link">contact</a></li>
+          <li><a href="team.html" class="mm-nav-link">team</a></li>
+          <li>
+            <div class="flex justify-start  mt-8 mx-4">
+              <a href="contact.html"
+                class="mega-reveal-btn relative overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1 transition-all duration-200">
+
+                <div class="btn-inner relative z-2 flex items-center gap-3">
+                  <div
+                    class="icon-circle h-6 w-6 rounded-full bg-green4 flex items-center justify-center overflow-hidden">
+                    <div class="icon-slider flex flex-row ">
+                      <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
+                        <path
+                          d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                          fill="var(--color-green1)" />
+                      </svg>
+                      <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
+                        <path
+                          d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                          fill="var(--color-green1)" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="text-mask md:h-7.5 h-6 overflow-hidden flex flex-col">
+                    <span class="t-up md:text-[20px] text-base  font-medium text-green4 uppercase">Let’s
+                      Connect</span>
+                    <span class="t-down md:text-[20px] text-base  font-medium text-green4 uppercase">Let’s
+                      Connect</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+        </ul>
+
+        <!-- LET'S CONNECT -->
+        <div>
+          <div>
+            <div class="w-full flex justify-end">
+              <img src="assets/images/menu-mobile-shape.svg" class="img-fluid sm:w-auto w-[190px]" alt="mobile menu">
+            </div>
+            <img src="assets/images/mobile-bottom-logo.svg" class="img-fluid w-full" alt="mobile menu">
+          </div>
+        </div>
+
+
+      </div>
+
+      <!-- PANEL 2: Services -->
+      <div id="mm-services" class="mm-panel mm-services">
+        <div class="mm-services-header">
+          <button id="mm-back" class="mm-back-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path d="M19 12H5M11 6l-6 6 6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            BACK
+          </button>
+          <button id="mm-services-close" class="mm-close-btn" aria-label="Close menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"
+                fill="white" />
+            </svg>
+
+          </button>
+        </div>
+
+        <div>
+          <div class="mm-services-title">Services</div>
+
+          <!-- 2×3 grid -->
+          <div class="mm-services-grid">
+            <!-- Mobile App Design -->
+            <a href="mobile-app-design.html" class="mm-service-card">
+              <span class="card-icon">
+                <img src="assets/images/dropdownicon1.svg" class="img-fluid" alt="dropdown-icon">
+              </span>
+              <span class="card-label">MOBILE APP DESIGN</span>
+            </a>
+            <!-- Dashboard Design -->
+            <a href="dashboard-design.html" class="mm-service-card">
+              <span class="card-icon">
+                <img src="assets/images/dropdownicon2.svg" class="img-fluid" alt="dropdown-icon">
+              </span>
+              <span class="card-label">DASHBOARD DESIGN</span>
+            </a>
+            <!-- Website Design -->
+            <a href="website-design.html" class="mm-service-card">
+              <span class="card-icon">
+                <img src="assets/images/dropdownicon3.svg" class="img-fluid" alt="dropdown-icon">
+              </span>
+              <span class="card-label">WEBSITE DESIGN</span>
+            </a>
+            <!-- Web App Design -->
+            <a href="web-application-design.html" class="mm-service-card">
+              <span class="card-icon">
+                <img src="assets/images/dropdownicon4.svg" class="img-fluid" alt="dropdown-icon">
+              </span>
+              <span class="card-label">WEB APP DESIGN</span>
+            </a>
+            <!-- SaaS Design -->
+            <a href="saas-design.html" class="mm-service-card">
+              <span class="card-icon">
+                <img src="assets/images/dropdownicon5.svg" class="img-fluid" alt="dropdown-icon">
+              </span>
+              <span class="card-label">SAAS DESIGN</span>
+            </a>
+            <!-- Branding -->
+            <a href="branding-design.html" class="mm-service-card">
+              <span class="card-icon">
+                <img src="assets/images/dropdownicon6.svg" class="img-fluid" alt="dropdown-icon">
+              </span>
+              <span class="card-label">BRANDING</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- decorative bottom grid -->
+        <div>
+          <div>
+            <div class="w-full flex justify-end">
+              <img src="assets/images/menu-mobile-shape.svg" class="img-fluid sm:w-auto w-[190px]" alt="mobile menu">
+            </div>
+            <img src="assets/images/mobile-bottom-logo.svg" class="img-fluid w-full" alt="mobile menu">
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- end mobile-menu-wrapper -->
+  </nav>
+
+  <!-- FULL PAGE MENU -->
+  <div id="pixxen-menu" role="dialog" aria-modal="true" aria-label="Main navigation">
+
+    <!-- TOP PANEL: slides in from top -->
+    <div class="menu-top" id="menu-top">
+
+      <!-- Grid decoration top-left -->
+      <div class="deco-cross" style="top:0px; left:0px;">
+        <img src="assets/images/large-menu-top.svg" class="img-fluid" alt="">
+      </div>
+
+      <!-- Grid decoration top-right area -->
+      <div class="deco-cross" style="bottom:0px; right:0px;">
+        <img src="assets/images/large-menu-bottom.svg" class="img-fluid" alt="">
+      </div>
+
+      <!-- LET'S CONNECT -->
+
+      <a href="contact.html"
+        class="xl:px-12 connect-btn md:px-5 mega-reveal-btn relative overflow-hidden cursor-pointer py-3 bg-[#BD8600] text-white transition-colors font-bold">
+        <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
+          <span class="t-up text-base  font-medium text-white uppercase">Let’s Connect</span>
+          <span class="t-down text-base  font-medium text-white uppercase">Let’s Connect</span>
+        </div>
+      </a>
+
+      <!-- CLOSE BUTTON -->
+      <div class="close-wrap">
+        <button class="close-btn" id="menu-close" aria-label="Close menu">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 6L18 18M6 18L18 6" stroke="white" stroke-width="2.5" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- NAV LINKS -->
+      <nav class="nav-columns" id="nav-columns">
+
+        <div class="nav-col" id="col-services">
+          <div class="nav-col-title">Services</div>
+          <ul>
+            <li><a href="mobile-app-design.html">Mobile App Design</a></li>
+            <li><a href="dashboard-design.html">Dashboard Design</a></li>
+            <li><a href="website-design.html">Website Design</a></li>
+            <li><a href="web-application-design.html">Web App Design</a></li>
+            <li><a href="saas-design.html">SaaS Design</a></li>
+            <li><a href="branding-design.html">Branding</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-col" id="col-pixxen">
+          <div class="nav-col-title">Pixxen</div>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="case-study.html">Case Studies</a></li>
+            <li><a href="team.html">Team</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-col" id="col-resources">
+          <div class="nav-col-title">Resources</div>
+          <ul>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="blog.html">Blogs</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-col" id="col-legal">
+          <div class="nav-col-title">Legal</div>
+          <ul>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+          </ul>
+        </div>
+
+      </nav>
+
+    </div><!-- /menu-top -->
+
+
+    <!-- BOTTOM PANEL: slides in from bottom (logo bar) -->
+    <div class="menu-bottom" id="menu-bottom">
+
+
+      <!-- LOGO -->
+      <div class="bottom-logo" id="bottom-logo">
+        <img src="assets/images/largemenu-pixxen-logo.svg" class="img-fluid" alt="largemenu">
+      </div>
+
+    </div><!-- /menu-bottom -->
+
+  </div>
+  <!-- / FULL PAGE MENU -->
+
+
+
+
+  <!-- banner section start  -->
+  <section
+    class="relative flex flex-col justify-between overflow-hidden bg-white min-h-screen background-banner px-4 sm:px-8 pt-16 lg:pt-20 md:pb-8 sm:pb-6 pb-4">
+
+    <!-- Decorative corner / side images : only shown from lg breakpoint up, matching the reference layout -->
+
+    <!-- Top Left : kissing couple -->
+    <img src="assets/images/banner-left-image1.png" alt="Couple embracing outdoors"
+      class="hidden lg:block absolute left-0 top-[38%] max-w-[418px] w-full rounded-[999px]" />
+
+    <img src="assets/images/banner-left-image2.png" alt="Bride standing in a field"
+      class="hidden lg:block absolute left-[34%] bottom-[15%] w-full max-w-[289px] rounded-[999px]" />
+
+    <img src="assets/images/banner-left-image3.png" alt="Bride and groom close up"
+      class="hidden lg:block absolute right-[8%] bottom-[18%] w-full max-w-[356px] max-h-[244px]  rounded-[999px]" />
+
+
+    <!-- Bottom Left-Center : bride in field -->
+    <img src="assets/images/banner-left-image4.png" alt="Couple walking together"
+      class="hidden lg:block absolute -right-[50px] top-30% w-full max-w-[400px] max-h-[270px]  rounded-[999px]" />
+
+
+
+
+    <!-- Top Right : couple walking -->
+
+
+    <!-- Bottom Right-Center : bride and groom close-up -->
+
+    <!-- Center Content -->
+    <div class="relative z-10 max-w-3xl mx-auto text-center flex flex-col items-center pt-4 lg:pt-10">
+
+      <h1
+        class="font-instrument-serif uppercase text-[#23292E] text-[36px] sm:text-[44px] lg:text-[56px] leading-[110%]">
+        <span class="inline-block bg-[#FFEBC8] border border-[#FAD18B] rounded-full px-4 sm:px-5 py-0.5">WEDDING</span>
+        SERVICES WEBSITE DESIGN THAT TURNS INSPIRATION SCROLLING INTO BOOKED
+      </h1>
+
+      <p class=" text-[#555B54] text-base sm:text-lg leading-[130%] mt-6 max-w-2xl">
+        Logo, branding, custom wedding vendor website, SEO content built around real couple-search behavior, on-page
+        SEO, and Google Business Profile setup. Every page engineered for the moment a couple decides whether to send an
+        inquiry tonight or scroll to the next vendor on The Knot.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-8 mt-8">
+        <a href="#"
+          class="font-instrument-serif uppercase text-[#23292E] text-[20px] leading-[110%] duration-150 transition-all bg-[#F1BFBE] hover:bg-[#ffe5e5] flex justify-center items-center px-8 py-[18px] rounded-full">
+          Book a free 15-min call
+        </a>
+        <a href="#work"
+          class="font-instrument-serif uppercase text-[#23292E] text-[20px] leading-[110%] underline underline-offset-auto decoration-solid">
+          See our wedding work
+        </a>
+      </div>
+    </div>
+
+    <!-- Bottom trust row -->
+    <div
+      class="relative z-10 mt-20 lg:mt-32 flex flex-wrap justify-between max-w-[1120px] mx-auto w-full items-center gap-x-10 gap-y-6">
+
+      <div class="flex items-center gap-2">
+        <img src="assets/images/wedding-service-check.svg" class="img-fluid" alt="wedding-service-check">
+        <span class="font-instrument-serif uppercase text-[#23292E] text-[18px] sm:text-2xl leading-[110%]">Trusted by
+          vendors</span>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <img src="assets/images/wedding-service-check.svg" class="img-fluid" alt="wedding-service-check">
+        <span class="font-instrument-serif uppercase text-[#23292E] text-[18px] sm:text-2xl leading-[110%]">Global US
+          coverage</span>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <img src="assets/images/wedding-service-check.svg" class="img-fluid" alt="wedding-service-check">
+        <span class="font-instrument-serif uppercase text-[#23292E] text-[18px] sm:text-2xl leading-[110%]">14-day
+          delivery</span>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <img src="assets/images/wedding-service-check.svg" class="img-fluid" alt="wedding-service-check">
+        <span class="font-instrument-serif uppercase text-[#23292E] text-[18px] sm:text-2xl leading-[110%]">No monthly
+          retainers</span>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- banner section end  -->
+
+
+
+  <!-- Reason section start  -->
+  <section class="section-padding bg-white">
+    <div class="container">
+      <!-- Title -->
+      <div class="max-w-[992px] mx-auto text-center mb-12">
+        <h2 class="text-[#23292E] font-instrument-serif text-[48px] font-normal leading-[120%] uppercase">
+          <span class="inline-block bg-[#FFEBC8] border border-[#FAD18B] rounded-full px-5 py-1">Nine Reasons</span>
+          Most Wedding Vendor Websites Quietly Hand Inquiries To The Knot
+        </h2>
+        <p class="text-[#555B54] text-lg leading-[130%] mt-6">
+          Generic web designers don't understand the couple-vendor relationship. Couples plan in inspiration
+          boards on Pinterest, shortlist on directories, and decide on your website at midnight. Most wedding
+          sites we audit are leaking qualified inquiries in ways the vendor hasn't noticed yet.
+        </p>
+      </div>
+
+      <!-- Cards -->
+      <div class="border-t border-dashed border-[#D9D9D9]">
+
+        <!-- Card 01 -->
+        <div
+          class="flex flex-col md:grid grid-cols-1 md:grid-cols-12 items-center gap-4 md:gap-6 lg:gap-8 py-8 border-b border-dashed border-[#D9D9D9]">
+          <!-- Number -->
+          <div class="col-span-1 order-1 flex md:block">
+            <span
+              class="font-instrument-serif text-[32px] md:text-[40px] lg:text-[48px] leading-[120%] text-[#23292E] underline underline-offset-auto">
+              01
+            </span>
+          </div>
+
+          <!-- Icon -->
+          <div class="col-span-1 order-2">
+            <img src="assets/images/reason-weeding-service-1.svg" class="img-fluid w-14 h-14 md:w-16 md:h-16"
+              alt="weeding service">
+          </div>
+
+          <!-- Title -->
+          <div class="col-span-4 order-3">
+            <h3
+              class="font-instrument-serif text-[22px] md:text-[24px] lg:text-[28px] leading-[130%] uppercase text-[#23292E]">
+              Gallery takes 12 seconds to load on mobile
+            </h3>
+          </div>
+
+          <!-- Description -->
+          <div class="col-span-6 order-4">
+            <p class="text-base md:text-lg leading-[130%] text-[#555B54]">
+              Wedding is the most visual category online — and most vendor sites kill conversion with unoptimized
+              galleries. Every additional second of load time loses you 7% of inquiries from couples who decided
+              in their bridal-suite brain at 11pm.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 02 -->
+        <div
+          class="flex flex-col md:grid grid-cols-1 md:grid-cols-12 items-center gap-4 md:gap-6 lg:gap-8 py-8 border-b border-dashed border-[#D9D9D9]">
+          <div class="col-span-1 order-1 flex md:block">
+            <span
+              class="font-instrument-serif text-[32px] md:text-[40px] lg:text-[48px] leading-[120%] text-[#23292E] underline underline-offset-auto">
+              02
+            </span>
+          </div>
+          <div class="col-span-1 order-2">
+            <img src="assets/images/reason-weeding-service-2.svg" class="img-fluid w-14 h-14 md:w-16 md:h-16"
+              alt="weeding service">
+          </div>
+          <div class="col-span-4 order-3">
+            <h3
+              class="font-instrument-serif text-[22px] md:text-[24px] lg:text-[28px] leading-[130%] uppercase text-[#23292E]">
+              Will my site rank #1 for '[my city] wedding photographer'?
+            </h3>
+          </div>
+          <div class="col-span-6 order-4">
+            <p class="text-base md:text-lg leading-[130%] text-[#555B54]">
+              By the time you respond on Tuesday morning, the couple has emailed five other photographers and
+              booked the one who confirmed their date in 20 minutes. A simple date-availability widget cuts
+              inquiry-to-booking time by 60–70%.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 03 -->
+        <div
+          class="flex flex-col md:grid grid-cols-1 md:grid-cols-12 items-center gap-4 md:gap-6 lg:gap-8 py-8 border-b border-dashed border-[#D9D9D9]">
+          <div class="col-span-1 order-1 flex md:block">
+            <span
+              class="font-instrument-serif text-[32px] md:text-[40px] lg:text-[48px] leading-[120%] text-[#23292E] underline underline-offset-auto">
+              03
+            </span>
+          </div>
+          <div class="col-span-1 order-2">
+            <img src="assets/images/reason-weeding-service-3.svg" class="img-fluid w-14 h-14 md:w-16 md:h-16"
+              alt="weeding service">
+          </div>
+          <div class="col-span-4 order-3">
+            <h3
+              class="font-instrument-serif text-[22px] md:text-[24px] lg:text-[28px] leading-[130%] uppercase text-[#23292E]">
+              Pricing completely hidden — couples can't filter
+            </h3>
+          </div>
+          <div class="col-span-6 order-4">
+            <p class="text-base md:text-lg leading-[130%] text-[#555B54]">
+              Couples set budgets early and filter ruthlessly. 'Inquire for pricing' filters out qualified couples
+              and lets in the time-wasters. Starting prices or package tiers ('Collections start at $4,800')
+              filter the other way.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 04 -->
+        <div
+          class="flex flex-col md:grid grid-cols-1 md:grid-cols-12 items-center gap-4 md:gap-6 lg:gap-8 py-8 border-b border-dashed border-[#D9D9D9]">
+          <div class="col-span-1 order-1 flex md:block">
+            <span
+              class="font-instrument-serif text-[32px] md:text-[40px] lg:text-[48px] leading-[120%] text-[#23292E] underline underline-offset-auto">
+              04
+            </span>
+          </div>
+          <div class="col-span-1 order-2">
+            <img src="assets/images/reason-weeding-service-4.svg" class="img-fluid w-14 h-14 md:w-16 md:h-16"
+              alt="weeding service">
+          </div>
+          <div class="col-span-4 order-3">
+            <h3
+              class="font-instrument-serif text-[22px] md:text-[24px] lg:text-[28px] leading-[130%] uppercase text-[#23292E]">
+              Generic portfolio where every wedding looks the same
+            </h3>
+          </div>
+          <div class="col-span-6 order-4">
+            <p class="text-base md:text-lg leading-[130%] text-[#555B54]">
+              Couples scroll Instagram and see hundreds of photographers, planners, and florists who all look
+              identical. The portfolio that converts is the one that signals a specific aesthetic — bright and
+              airy, dark and moody, editorial, documentary, fine art — visibly and consistently.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 05 -->
+        <div
+          class="flex flex-col md:grid grid-cols-1 md:grid-cols-12 items-center gap-4 md:gap-6 lg:gap-8 py-8 border-b border-dashed border-[#D9D9D9]">
+          <div class="col-span-1 order-1 flex md:block">
+            <span
+              class="font-instrument-serif text-[32px] md:text-[40px] lg:text-[48px] leading-[120%] text-[#23292E] underline underline-offset-auto">
+              05
+            </span>
+          </div>
+          <div class="col-span-1 order-2">
+            <img src="assets/images/reason-weeding-service-5.svg" class="img-fluid w-14 h-14 md:w-16 md:h-16"
+              alt="weeding service">
+          </div>
+          <div class="col-span-4 order-3">
+            <h3
+              class="font-instrument-serif text-[22px] md:text-[24px] lg:text-[28px] leading-[130%] uppercase text-[#23292E]">
+              Not ranking for '[city] wedding [vendor type]'
+            </h3>
+          </div>
+          <div class="col-span-6 order-4">
+            <p class="text-base md:text-lg leading-[130%] text-[#555B54]">
+              Couples search 'Austin wedding photographer' and 'Charleston wedding venue' constantly. Your
+              competitors who rank for these terms get inquiries you don't, and the only thing standing between
+              you and that traffic is real SEO content most vendor sites lack.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 06 -->
+        <div
+          class="flex flex-col md:grid grid-cols-1 md:grid-cols-12 items-center gap-4 md:gap-6 lg:gap-8 py-8 border-b border-dashed border-[#D9D9D9]">
+          <div class="col-span-1 order-1 flex md:block">
+            <span
+              class="font-instrument-serif text-[32px] md:text-[40px] lg:text-[48px] leading-[120%] text-[#23292E] underline underline-offset-auto">
+              06
+            </span>
+          </div>
+          <div class="col-span-1 order-2">
+            <img src="assets/images/reason-weeding-service-6.svg" class="img-fluid w-14 h-14 md:w-16 md:h-16"
+              alt="weeding service">
+          </div>
+          <div class="col-span-4 order-3">
+            <h3
+              class="font-instrument-serif text-[22px] md:text-[24px] lg:text-[28px] leading-[130%] uppercase text-[#23292E]">
+              Paying The Knot, WeddingWire, and Zola $400–1,000/month for leads
+            </h3>
+          </div>
+          <div class="col-span-6 order-4">
+            <p class="text-base md:text-lg leading-[130%] text-[#555B54]">
+              Directories are useful but expensive. Vendors who rank organically for their target keywords escape
+              the directory tax and own their inquiry pipeline. The directory becomes one source, not the only
+              source.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 07 -->
+        <div
+          class="flex flex-col md:grid grid-cols-1 md:grid-cols-12 items-center gap-4 md:gap-6 lg:gap-8 py-8 border-b border-dashed border-[#D9D9D9]">
+          <div class="col-span-1 order-1 flex md:block">
+            <span
+              class="font-instrument-serif text-[32px] md:text-[40px] lg:text-[48px] leading-[120%] text-[#23292E] underline underline-offset-auto">
+              07
+            </span>
+          </div>
+          <div class="col-span-1 order-2">
+            <img src="assets/images/reason-weeding-service-7.svg" class="img-fluid w-14 h-14 md:w-16 md:h-16"
+              alt="weeding service">
+          </div>
+          <div class="col-span-4 order-3">
+            <h3
+              class="font-instrument-serif text-[22px] md:text-[24px] lg:text-[28px] leading-[130%] uppercase text-[#23292E]">
+              Inquiry form asks for the wedding date but routes nowhere useful
+            </h3>
+          </div>
+          <div class="col-span-6 order-4">
+            <p class="text-base md:text-lg leading-[130%] text-[#555B54]">
+              Most vendor forms collect names and dates and dump them in a generic inbox. Smart forms route by
+              season, capture budget range, and trigger an instant calendar-check response — turning inquiries
+              into discovery calls without manual back-and-forth.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 08 -->
+        <div
+          class="flex flex-col md:grid grid-cols-1 md:grid-cols-12 items-center gap-4 md:gap-6 lg:gap-8 py-8 border-b border-dashed border-[#D9D9D9]">
+          <div class="col-span-1 order-1 flex md:block">
+            <span
+              class="font-instrument-serif text-[32px] md:text-[40px] lg:text-[48px] leading-[120%] text-[#23292E] underline underline-offset-auto">
+              08
+            </span>
+          </div>
+          <div class="col-span-1 order-2">
+            <img src="assets/images/reason-weeding-service-8.svg" class="img-fluid w-14 h-14 md:w-16 md:h-16"
+              alt="weeding service">
+          </div>
+          <div class="col-span-4 order-3">
+            <h3
+              class="font-instrument-serif text-[22px] md:text-[24px] lg:text-[28px] leading-[130%] uppercase text-[#23292E]">
+              Testimonials without couple names, venues, or wedding dates
+            </h3>
+          </div>
+          <div class="col-span-6 order-4">
+            <p class="text-base md:text-lg leading-[130%] text-[#555B54]">
+              'Sarah was amazing — highly recommend!' converts no one. 'Booked Sarah for our 200-guest Hotel Emma
+              wedding in October 2024 — she handled the rain plan flawlessly and the gallery came back in 18
+              days' converts the next couple weighing the same vendor.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 09 -->
+        <div
+          class="flex flex-col md:grid grid-cols-1 md:grid-cols-12 items-center gap-4 md:gap-6 lg:gap-8 py-8 border-b border-dashed border-[#D9D9D9]">
+          <div class="col-span-1 order-1 flex md:block">
+            <span
+              class="font-instrument-serif text-[32px] md:text-[40px] lg:text-[48px] leading-[120%] text-[#23292E] underline underline-offset-auto">
+              09
+            </span>
+          </div>
+          <div class="col-span-1 order-2">
+            <img src="assets/images/reason-weeding-service-9.svg" class="img-fluid w-14 h-14 md:w-16 md:h-16"
+              alt="weeding service">
+          </div>
+          <div class="col-span-4 order-3">
+            <h3
+              class="font-instrument-serif text-[22px] md:text-[24px] lg:text-[28px] leading-[130%] uppercase text-[#23292E]">
+              No real-wedding features — just a homepage gallery
+            </h3>
+          </div>
+          <div class="col-span-6 order-4">
+            <p class="text-base md:text-lg leading-[130%] text-[#555B54]">
+              Real-wedding case study pages are SEO gold (long-tail keywords like 'Carmel intimate elopement,'
+              'Charleston tented reception') and conversion gold (couples see themselves in the story). Most
+              vendor sites skip them entirely.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Reason section end  -->
+
+
+
+  <!-- price section  -->
+  <section class="bg-[#FBF7F6] py-24">
+    <div class="container">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20">
+
+        <!-- Left Column -->
+        <div class="lg:col-span-5">
+          <h2
+            class="font-instrument-serif text-[36px] md:text-[42px] lg:text-[48px] leading-[120%] uppercase text-[#23292E]">
+            <span class="inline-block bg-[#FFEBC8] border border-[#FAD18B] rounded-full px-3 py-1">What You'd Pay
+            </span>Separately
+            Vs What You Pay Us
+          </h2>
+
+          <p class="text-[#555B54] text-lg leading-[130%] mt-6 ">
+            Six separate services from six providers, or one package, one team, one fixed price. Every
+            deliverable built specifically for how engaged couples research and book wedding vendors.
+          </p>
+
+          <a href="#"
+            class="inline-block mt-6 rounded-full bg-[#F1BFBE] text-[#23292E] font-instrument-serif text-[20px] leading-[110%] uppercase px-7 py-3.5">
+            Book A Free 15-Min Call
+          </a>
+
+          <ul class="mt-10 space-y-4">
+            <li class="flex items-center gap-3">
+              <img src="assets/images/weeding-price-check.svg" class="img-fluid" alt="check">
+
+              <span class="font-instrument-serif text-2xl leading-[110%] uppercase text-[#23292E]">Trusted By
+                Vendors</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <img src="assets/images/weeding-price-check.svg" class="img-fluid" alt="check">
+              <span class="font-instrument-serif text-2xl leading-[110%] uppercase text-[#23292E]">Global US
+                Coverage</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <img src="assets/images/weeding-price-check.svg" class="img-fluid" alt="check">
+              <span class="font-instrument-serif text-2xl leading-[110%] uppercase text-[#23292E]">14-Day
+                Delivery</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <img src="assets/images/weeding-price-check.svg" class="img-fluid" alt="check">
+              <span class="font-instrument-serif text-2xl leading-[110%] uppercase text-[#23292E]">No Monthly
+                Retainers</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right Column -->
+        <div class="lg:col-span-7">
+          <div class="space-y-1">
+
+            <!-- Item 01 -->
+            <div class="bg-white rounded-4xl p-6">
+              <div class="flex items-start justify-between gap-4">
+                <h3 class="font-instrument-serif text-[24px] md:text-[28px] leading-[130%] uppercase text-[#23292E]">
+                  Logo + Brand Identity
+                </h3>
+                <span
+                  class="font-instrument-serif text-[24px] md:text-[28px] leading-[130%] uppercase text-[#23292E] text-right shrink-0">
+                  $400+
+                </span>
+              </div>
+              <p class="text-[#555B54] text-lg leading-[130%] mt-2">
+                Logo, palette, typography, brand kit. Editorial wedding aesthetic premium without being precious.
+              </p>
+            </div>
+
+            <!-- Item 02 -->
+            <div class="bg-white rounded-4xl p-6">
+              <div class="flex items-start justify-between gap-4">
+                <h3 class="font-instrument-serif text-[24px] md:text-[28px] leading-[130%] uppercase text-[#23292E]">
+                  Custom 7-Page Wedding Vendor Website
+                </h3>
+                <span
+                  class="font-instrument-serif text-[24px] md:text-[28px] leading-[130%] uppercase text-[#23292E] text-right shrink-0">
+                  $400+
+                </span>
+              </div>
+              <p class="text-[#555B54] text-lg leading-[130%] mt-2">
+                Home, About, Portfolio, Services, Real weddings, Investment, Contact. Mobile-first, sub-2s load
+                on photo-heavy galleries.
+              </p>
+            </div>
+
+            <!-- Item 03 -->
+            <div class="bg-white rounded-4xl p-6">
+              <div class="flex items-start justify-between gap-4">
+                <h3 class="font-instrument-serif text-[24px] md:text-[28px] leading-[130%] uppercase text-[#23292E]">
+                  SEO Content With Real Keyword Research
+                </h3>
+                <span
+                  class="font-instrument-serif text-[24px] md:text-[28px] leading-[130%] uppercase text-[#23292E] text-right shrink-0">
+                  $400+
+                </span>
+              </div>
+              <p class="text-[#555B54] text-lg leading-[130%] mt-2">
+                Page copy targeting '[city] wedding [vendor type],' '[venue] wedding photographer,' '[style]
+                [vendor].' Real couple-search behavior.
+              </p>
+            </div>
+
+            <!-- Item 04 -->
+            <div class="bg-white rounded-4xl p-6">
+              <div class="flex items-start justify-between gap-4">
+                <h3 class="font-instrument-serif text-[24px] md:text-[28px] leading-[130%] uppercase text-[#23292E]">
+                  Technical On-Page SEO Setup
+                </h3>
+                <span
+                  class="font-instrument-serif text-[24px] md:text-[28px] leading-[130%] uppercase text-[#23292E] text-right shrink-0">
+                  $400+
+                </span>
+              </div>
+              <p class="text-[#555B54] text-lg leading-[130%] mt-2">
+                EventVenue, Photograph, LocalBusiness schema, meta titles per real wedding, internal linking,
+                sitemap, Search Console.
+              </p>
+            </div>
+
+            <!-- Item 05 -->
+            <div class="bg-white rounded-4xl p-6">
+              <div class="flex items-start justify-between gap-4">
+                <h3 class="font-instrument-serif text-[24px] md:text-[28px] leading-[130%] uppercase text-[#23292E]">
+                  Google Business Profile Optimization
+                </h3>
+                <span
+                  class="font-instrument-serif text-[24px] md:text-[28px] leading-[130%] uppercase text-[#23292E] text-right shrink-0">
+                  $400+
+                </span>
+              </div>
+              <p class="text-[#555B54] text-lg leading-[130%] mt-2">
+                Categories, services, gallery photos, NAP cleanup, posts setup. Often the second-biggest source
+                of inquiries after directories.
+              </p>
+            </div>
+
+            <!-- Item 06 -->
+            <div class="bg-white rounded-4xl p-6">
+              <div class="flex items-start justify-between gap-4">
+                <h3 class="font-instrument-serif text-[24px] md:text-[28px] leading-[130%] uppercase text-[#23292E]">
+                  30 Days Post-Launch Support
+                </h3>
+                <span
+                  class="font-instrument-serif text-[24px] md:text-[28px] leading-[130%] uppercase text-[#23292E] text-right shrink-0">
+                  $400+
+                </span>
+              </div>
+              <p class="text-[#555B54] text-lg leading-[130%] mt-2">
+                Bug fixes, content updates, CMS training, A/B test of inquiry form placement.
+              </p>
+            </div>
+
+            <!-- Total -->
+            <div class="rounded-4xl bg-[#23292E] px-6 py-5 flex items-center justify-between">
+              <span class="font-instrument-serif text-[28px] leading-[130%] uppercase text-white">Total</span>
+              <span class="font-instrument-serif text-[28px] leading-[130%] uppercase text-white">$4,200</span>
+            </div>
+
+            <!-- Pixxen Pack -->
+            <div class="rounded-4xl bg-[#F1BFBE] px-6 py-5 flex items-center justify-between">
+              <span class="font-instrument-serif text-[28px] leading-[130%] uppercase text-[#23292E]">Pixxen Wedding
+                Vendor Pack</span>
+              <span
+                class="font-instrument-serif text-[28px] Most Wedding Vendor Websi-[130%] uppercase text-[#23292E]">$999</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- price section  -->
+
+
+
+
+  <!-- features section  -->
+  <section class="section-padding bg-white">
+    <div class="container">
+      <!-- Title -->
+      <div class="max-w-[992px] mx-auto text-center mb-12">
+        <h2
+          class="text-[#23292E] font-instrument-serif text-[36px] md:text-[42px] lg:text-[48px] font-normal leading-[120%] uppercase">
+          <span class="inline-block bg-[#FFEBC8] border border-[#FAD18B] rounded-full px-5 py-1">8 Features</span>
+          Wedding Vendors Actually Use & Most Websites Skip
+        </h2>
+        <p class="text-[#555B54] text-lg leading-[130%] mt-6 max-w-[620px] mx-auto">
+          Every feature on this list exists because we've seen it move the needle on booked inquiries. Nothing
+          here is decoration.
+        </p>
+      </div>
+
+      <!-- Cards Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <!-- Card 01 -->
+        <div
+          class="flex flex-col items-center self-stretch rounded-4xl border border-dashed border-[#C7C6C6] bg-white px-6 py-8">
+          <div class=" flex items-center justify-center mb-8">
+            <img src="assets/images/weeding-features-1.svg" class="img-fluid" alt="features icon">
+          </div>
+          <h3 class="font-instrument-serif text-[28px] leading-[130%] uppercase text-[#23292E] text-center">
+            Optimized Galleries That Load In Under 2 Seconds
+          </h3>
+          <p class="text-[#555B54] text-lg leading-[130%] text-center mt-4">
+            Lazy loading, WebP format, responsive image sets, lightbox preview. Mobile-first gallery design
+            that doesn't kill conversion on phones — where 78% of wedding inquiry traffic originates.
+          </p>
+        </div>
+
+        <!-- Card 02 -->
+        <div
+          class="flex flex-col items-center self-stretch rounded-4xl border border-dashed border-[#C7C6C6] bg-white px-6 py-8">
+          <div class=" flex items-center justify-center mb-8">
+            <img src="assets/images/weeding-features-2.svg" class="img-fluid" alt="features icon">
+          </div>
+          <h3 class="font-instrument-serif text-[28px] leading-[130%] uppercase text-[#23292E] text-center">
+            Date-Availability Checker On Every Page
+          </h3>
+          <p class="text-[#555B54] text-lg leading-[130%] text-center mt-4">
+            Couples type their wedding date, the site checks your calendar (synced from HoneyBook, Dubsado,
+            17hats, Aisle Planner, or Google Calendar) and shows availability instantly. Cuts
+            inquiry-to-booking time by more than half.
+          </p>
+        </div>
+
+        <!-- Card 03 -->
+        <div
+          class="flex flex-col items-center self-stretch rounded-4xl border border-dashed border-[#C7C6C6] bg-white px-6 py-8">
+          <div class=" flex items-center justify-center mb-8">
+            <img src="assets/images/weeding-features-3.svg" class="img-fluid" alt="features icon">
+          </div>
+          <h3 class="font-instrument-serif text-[28px] leading-[130%] uppercase text-[#23292E] text-center">
+            Package Pricing With Starting-At Transparency
+          </h3>
+          <p class="text-[#555B54] text-lg leading-[130%] text-center mt-4">
+            Collections or tiers with starting prices visible — even if final pricing is custom. Filters out
+            couples whose budget doesn't fit, qualifies the ones who do, and saves you discovery-call time on
+            misfit inquiries.
+          </p>
+        </div>
+
+        <!-- Card 04 -->
+        <div
+          class="flex flex-col items-center self-stretch rounded-4xl border border-dashed border-[#C7C6C6] bg-white px-6 py-8">
+          <div class=" flex items-center justify-center mb-8">
+            <img src="assets/images/weeding-features-4.svg" class="img-fluid" alt="features icon">
+          </div>
+          <h3 class="font-instrument-serif text-[28px] leading-[130%] uppercase text-[#23292E] text-center">
+            Real Wedding Feature Pages With Full SEO
+          </h3>
+          <p class="text-[#555B54] text-lg leading-[130%] text-center mt-4">
+            Each real wedding gets a dedicated page — venue, season, style, vendor team, full gallery. Targets
+            long-tail keywords ('Hotel Emma San Antonio wedding,' 'Charleston tented backyard wedding') and
+            converts couples picturing themselves there.
+          </p>
+        </div>
+
+        <!-- Card 05 -->
+        <div
+          class="flex flex-col items-center self-stretch rounded-4xl border border-dashed border-[#C7C6C6] bg-white px-6 py-8">
+          <div class=" flex items-center justify-center mb-8">
+            <img src="assets/images/weeding-features-5.svg" class="img-fluid" alt="features icon">
+          </div>
+          <h3 class="font-instrument-serif text-[28px] leading-[130%] uppercase text-[#23292E] text-center">
+            Vendor Team Page With Cross-Referrals
+          </h3>
+          <p class="text-[#555B54] text-lg leading-[130%] text-center mt-4">
+            Wedding work is referral-driven. We build vendor team pages showing your trusted planners,
+            photographers, florists, and venues with mutual links — earning SEO authority and signaling
+            professionalism to couples.
+          </p>
+        </div>
+
+        <!-- Card 06 -->
+        <div
+          class="flex flex-col items-center self-stretch rounded-4xl border border-dashed border-[#C7C6C6] bg-white px-6 py-8">
+          <div class=" flex items-center justify-center mb-8">
+            <img src="assets/images/weeding-features-6.svg" class="img-fluid" alt="features icon">
+          </div>
+          <h3 class="font-instrument-serif text-[28px] leading-[130%] uppercase text-[#23292E] text-center">
+            Inquiry Form With Date, Budget, And Style Capture
+          </h3>
+          <p class="text-[#555B54] text-lg leading-[130%] text-center mt-4">
+            Form fields routed into HoneyBook, Dubsado, or 17hats with custom routing by season, venue, budget
+            tier, and aesthetic style. The first email back is a real proposal, not 'tell me about your
+            wedding.'
+          </p>
+        </div>
+
+        <!-- Card 07 -->
+        <div
+          class="flex flex-col items-center self-stretch rounded-4xl border border-dashed border-[#C7C6C6] bg-white px-6 py-8">
+          <div class=" flex items-center justify-center mb-8">
+            <img src="assets/images/weeding-features-7.svg" class="img-fluid" alt="features icon">
+          </div>
+          <h3 class="font-instrument-serif text-[28px] leading-[130%] uppercase text-[#23292E] text-center">
+            Pinterest And Instagram Feed Integration
+          </h3>
+          <p class="text-[#555B54] text-lg leading-[130%] text-center mt-4">
+            Live feed from your Pinterest boards and Instagram, embedded on relevant pages. Couples planning on
+            Pinterest find your work, click through, and land on a real branded site — not a Pinterest profile
+            or Instagram bio link.
+          </p>
+        </div>
+
+        <!-- Card 08 -->
+        <div
+          class="flex flex-col items-center self-stretch rounded-4xl border border-dashed border-[#C7C6C6] bg-white px-6 py-8">
+          <div class=" flex items-center justify-center mb-8">
+            <img src="assets/images/weeding-features-8.svg" class="img-fluid" alt="features icon">
+          </div>
+          <h3 class="font-instrument-serif text-[28px] leading-[130%] uppercase text-[#23292E] text-center">
+            Testimonials With Venue, Date, And Couple Name
+          </h3>
+          <p class="text-[#555B54] text-lg leading-[130%] text-center mt-4">
+            Real testimonials with permission — couple name, wedding venue, month and year, specific detail.
+            Schema-marked for rich snippets in search results.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- features section  -->
+
+
+
+  <!-- weeding case study section  -->
+  <section class="bg-[#FBF7F6] py-24">
+    <div class="container">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+
+        <!-- Left Column -->
+        <div class="lg:col-span-4">
+          <div class="sticky top-20">
+            <h2 class="font-instrument-serif text-[36px] md:text-[42px] leading-[120%] uppercase text-[#23292E]">
+              <span class="inline-block bg-[#FFEBC8] border border-[#FAD18B] rounded-full px-3 py-1">Website
+                Design</span> Built Around Your Specific
+              Wedding Service
+            </h2>
+
+            <p class="text-[#555B54] text-lg leading-[130%] mt-6">
+              A wedding photographer and a venue sell entirely different things to a couple in entirely
+              different decision states. We design for the vendor type, not a generic 'wedding industry'
+              template.
+            </p>
+
+            <a href="#"
+              class="mt-6 inline-block rounded-full bg-[#F1BFBE] text-[#23292E] font-instrument-serif text-[20px] leading-[110%] uppercase px-7 py-3.5">
+              Book A Free 15-Min Call
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: Cards Grid -->
+        <div class="lg:col-span-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            <!-- Card 01 -->
+            <div class="rounded-4xl bg-white overflow-hidden">
+              <img src="assets/images/weeding-service-specific-1.webp" alt="Wedding Photographer"
+                class="w-full h-[228px] object-cover rounded-t-[32px]">
+              <div class="flex flex-col items-start gap-3 self-stretch p-8">
+                <h3 class="font-instrument-serif text-[28px] leading-[130%] uppercase text-[#23292E]">
+                  Wedding Photographer Website
+                </h3>
+                <p class="text-[#555B54] text-lg leading-[130%]">
+                  Photographers are picked on portfolio and personality. We build gallery-first homepages with
+                  consistent aesthetic positioning (bright and airy, dark and moody, editorial, fine art,
+                  documentary), real wedding feature pages, package pricing transparency, and
+                  date-availability flow that beats your competitor's 'inquire' button.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 02 -->
+            <div class="rounded-4xl bg-white overflow-hidden">
+              <img src="assets/images/weeding-service-specific-2.webp" alt="Wedding Venue"
+                class="w-full h-[228px] object-cover rounded-t-[32px]">
+              <div class="flex flex-col items-start gap-3 self-stretch p-8">
+                <h3 class="font-instrument-serif text-[28px] leading-[130%] uppercase text-[#23292E]">
+                  Wedding Venue Website
+                </h3>
+                <p class="text-[#555B54] text-lg leading-[130%]">
+                  Couples shortlist venues by capacity, layout, and visual fit. We build venue sites with
+                  virtual tours, capacity charts (ceremony, reception, dinner-only), preferred vendor lists,
+                  package inclusions, and a date-check tool that prevents wasted tours on already-booked
+                  weekends.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 03 -->
+            <div class="rounded-4xl bg-white overflow-hidden">
+              <img src="assets/images/weeding-service-specific-3.webp" alt="Wedding Planner"
+                class="w-full h-[228px] object-cover rounded-t-[32px]">
+              <div class="flex flex-col items-start gap-3 self-stretch p-8">
+                <h3 class="font-instrument-serif text-[28px] leading-[130%] uppercase text-[#23292E]">
+                  Wedding Planner Website
+                </h3>
+                <p class="text-[#555B54] text-lg leading-[130%]">
+                  Planners need to differentiate full vs partial vs day-of clearly. We design tier comparison
+                  pages, planning timeline visualizations, real wedding case studies with planner-specific
+                  decisions surfaced, and vendor team pages that earn referrals from venues and photographers.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 04 -->
+            <div class="rounded-4xl bg-white overflow-hidden">
+              <img src="assets/images/weeding-service-specific-4.webp" alt="Wedding Florist"
+                class="w-full h-[228px] object-cover rounded-t-[32px]">
+              <div class="flex flex-col items-start gap-3 self-stretch p-8">
+                <h3 class="font-instrument-serif text-[28px] leading-[130%] uppercase text-[#23292E]">
+                  Wedding Florist Website
+                </h3>
+                <p class="text-[#555B54] text-lg leading-[130%]">
+                  Florals are sold on portfolio and seasonal expertise. We build portfolios organized by style
+                  (garden, modern, minimalist, romantic, moody), seasonal flower guides as SEO content,
+                  ceremony vs reception breakdowns, and consultation booking with mood board upload.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 05 -->
+            <div class="rounded-4xl bg-white overflow-hidden">
+              <img src="assets/images/weeding-service-specific-5.webp" alt="Wedding Videographer"
+                class="w-full h-[228px] object-cover rounded-t-[32px]">
+              <div class="flex flex-col items-start gap-3 self-stretch p-8">
+                <h3 class="font-instrument-serif text-[28px] leading-[130%] uppercase text-[#23292E]">
+                  Wedding Videographer Website
+                </h3>
+                <p class="text-[#555B54] text-lg leading-[130%]">
+                  Florals are sold on portfolio and seasonal expertise. We build portfolios organized by style
+                  (garden, modern, minimalist, romantic, moody), seasonal flower guides as SEO content,
+                  ceremony vs reception breakdowns, and consultation booking with mood board upload.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 06 -->
+            <div class="rounded-4xl bg-white overflow-hidden">
+              <img src="assets/images/weeding-service-specific-6.webp" alt="Wedding DJ and Band"
+                class="w-full h-[228px] object-cover rounded-t-[32px]">
+              <div class="flex flex-col items-start gap-3 self-stretch p-8">
+                <h3 class="font-instrument-serif text-[28px] leading-[130%] uppercase text-[#23292E]">
+                  Wedding DJ And Band Website
+                </h3>
+                <p class="text-[#555B54] text-lg leading-[130%]">
+                  Music is picked on style fit and reliability. We build playlist examples, video performance
+                  reels, package pricing (ceremony + reception + cocktail hour combinations), uplighting and
+                  dancefloor add-ons, and an MC sample so couples can hear the actual voice running their
+                  reception.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 07 -->
+            <div class="rounded-4xl bg-white overflow-hidden">
+              <img src="assets/images/weeding-service-specific-7.webp" alt="Wedding Officiant"
+                class="w-full h-[228px] object-cover rounded-t-[32px]">
+              <div class="flex flex-col items-start gap-3 self-stretch p-8">
+                <h3 class="font-instrument-serif text-[28px] leading-[130%] uppercase text-[#23292E]">
+                  Wedding Officiant Website
+                </h3>
+                <p class="text-[#555B54] text-lg leading-[130%]">
+                  Officiants are picked on ceremony style and personalization. We build sample ceremony pages
+                  (religious, non-religious, interfaith, elopement, vow renewal), personalization process
+                  walkthrough, sample readings library, and state-specific marriage license guidance for the
+                  markets you serve.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 08 -->
+            <div class="rounded-4xl bg-white overflow-hidden">
+              <img src="assets/images/weeding-service-specific-8.webp" alt="Wedding Cake Designer"
+                class="w-full h-[228px] object-cover rounded-t-[32px]">
+              <div class="flex flex-col items-start gap-3 self-stretch p-8">
+                <h3 class="font-instrument-serif text-[28px] leading-[130%] uppercase text-[#23292E]">
+                  Wedding Cake Designer Website
+                </h3>
+                <p class="text-[#555B54] text-lg leading-[130%]">
+                  Cake is picked on design and flavor. We build design galleries by style (modern, traditional,
+                  sculptural, painted, naked, semi-naked), flavor menus with seasonal availability, tasting
+                  booking flow, and serving-size calculators so couples can estimate before reaching out.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- weeding case study section  -->
+
+
+
+  <!-- process section  -->
+  <section class="section-padding bg-white overflow-hidden">
+    <div class="container">
+      <!-- Title -->
+      <div class="max-w-[900px] mx-auto text-center mb-16">
+        <h2
+          class="text-[#23292E] font-instrument-serif text-[36px] md:text-[42px] lg:text-[48px] font-normal leading-[120%] uppercase">
+          From Discovery Call To Fully Designed, Built, &amp; Launched Website In
+          <span class="inline-block bg-[#FFEBC8] border border-[#FAD18B] rounded-full px-3 py-1">Just 14 Days</span>
+        </h2>
+        <p class="text-[#555B54] text-lg leading-[130%] mt-6 max-w-[720px] mx-auto">
+          Most wedding marketing agencies take 60–90 days for the same scope. We don't, because the package is
+          productized — same caliber of work, less margin per project, faster turnaround.
+        </p>
+      </div>
+
+      <!-- Wave Timeline -->
+      <div class="relative min-h-[416px] mt-12 flex items-center justify-between w-full">
+        <!-- Wave background image (desktop only) -->
+        <img src="assets/images/weeding-service-wave-shape.svg" alt=""
+          class="hidden md:block w-full h-auto select-none pointer-events-none absolute top-1/2 -translate-y-1/2">
+
+        <!-- Cards over the wave -->
+        <div class="hidden md:grid grid-cols-4 w-full">
+          <!-- Step 1 -->
+          <div class="flex flex-col items-center text-center px-4">
+            <span
+              class="font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E] bg-[#F1BFBE] rounded-full px-2 py-1">
+              Days 1-2
+            </span>
+            <h3 class="font-instrument-serif text-[28px] leading-[130%] uppercase text-[#23292E] my-4">
+              Discovery
+            </h3>
+            <p class="text-[#555B54] text-lg leading-[130%] max-w-[260px]">
+              90-min kickoff. Portfolio audit. CRM and gallery host setup. Competitor review of three vendors
+              outranking you.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="flex flex-col items-center text-center px-4 ">
+            <span
+              class="font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E] bg-[#F1BFBE] rounded-full px-2 py-1">
+              Days 3-7
+            </span>
+            <h3 class="font-instrument-serif text-[28px] leading-[130%] uppercase text-[#23292E] my-4">
+              Brand + Design
+            </h3>
+            <p class="text-[#555B54] text-lg leading-[130%] max-w-[260px]">
+              Logo, palette, typography. Wireframes and comps. Aesthetic direction matched to portfolio. One
+              revision built in.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="flex flex-col items-center text-center px-4">
+            <span
+              class="font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E] bg-[#F1BFBE] rounded-full px-2 py-1">
+              Days 8-12
+            </span>
+            <h3 class="font-instrument-serif text-[28px] leading-[130%] uppercase text-[#23292E] my-4">
+              Build + SEO
+            </h3>
+            <p class="text-[#555B54] text-lg leading-[130%] max-w-[260px]">
+              Mobile-first build. SEO content per real wedding. Schema. Gallery and CRM integration. Image
+              optimization.
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="flex flex-col items-center text-center px-4 ">
+            <span
+              class="font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E] bg-[#F1BFBE] rounded-full px-2 py-1">
+              Days 13-14
+            </span>
+            <h3 class="font-instrument-serif text-[28px] leading-[130%] uppercase text-[#23292E] my-4">
+              Launch + GBP
+            </h3>
+            <p class="text-[#555B54] text-lg leading-[130%] max-w-[260px]">
+              DNS, Search Console, GBP rebuild, CMS training, directory listing optimization, handoff.
+            </p>
+          </div>
+        </div>
+
+        <!-- Mobile fallback: simple stacked list, no wave -->
+        <div class="grid grid-cols-1 gap-10 md:hidden">
+          <div class="flex flex-col items-center text-center">
+            <span
+              class="font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E] bg-[#F1BFBE] rounded-full px-2 py-1">
+              Days 1-2
+            </span>
+            <h3 class="font-instrument-serif text-[28px] leading-[130%] uppercase text-[#23292E] my-4">
+              Discovery
+            </h3>
+            <p class="text-[#555B54] text-lg leading-[130%] max-w-[320px]">
+              90-min kickoff. Portfolio audit. CRM and gallery host setup. Competitor review of three vendors
+              outranking you.
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center text-center">
+            <span
+              class="font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E] bg-[#F1BFBE] rounded-full px-2 py-1">
+              Days 3-7
+            </span>
+            <h3 class="font-instrument-serif text-[28px] leading-[130%] uppercase text-[#23292E] my-4">
+              Brand + Design
+            </h3>
+            <p class="text-[#555B54] text-lg leading-[130%] max-w-[320px]">
+              Logo, palette, typography. Wireframes and comps. Aesthetic direction matched to portfolio. One
+              revision built in.
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center text-center">
+            <span
+              class="font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E] bg-[#F1BFBE] rounded-full px-2 py-1">
+              Days 8-12
+            </span>
+            <h3 class="font-instrument-serif text-[28px] leading-[130%] uppercase text-[#23292E] my-4">
+              Build + SEO
+            </h3>
+            <p class="text-[#555B54] text-lg leading-[130%] max-w-[320px]">
+              Mobile-first build. SEO content per real wedding. Schema. Gallery and CRM integration. Image
+              optimization.
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center text-center">
+            <span
+              class="font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E] bg-[#F1BFBE] rounded-full px-2 py-1">
+              Days 13-14
+            </span>
+            <h3 class="font-instrument-serif text-[28px] leading-[130%] uppercase text-[#23292E] my-4">
+              Launch + GBP
+            </h3>
+            <p class="text-[#555B54] text-lg leading-[130%] max-w-[320px]">
+              DNS, Search Console, GBP rebuild, CMS training, directory listing optimization, handoff.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- process section  -->
+
+
+
+  <!-- local market section  -->
+  <section
+    class="overflow-hidden relative z-10 pt-24 pb-10 min-h-screen flex flex-col justify-between local-market-section">
+    <!-- Bottom wave/curve background -->
+    <img src="assets/images/hero-wave-bg.svg" alt=""
+      class="absolute bottom-0 left-0 w-full h-auto select-none pointer-events-none z-0">
+
+    <div>
+      <div class="container ">
+        <!-- Corner Images (desktop only) -->
+        <img src="assets/images/couple-1.webp" alt="Wedding couple"
+          class="hidden lg:block absolute left-[35px] bottom-[300px] w-[418px] h-[270px] rounded-full -z-10">
+
+        <img src="assets/images/couple-4.webp" alt="Wedding couple"
+          class="hidden lg:block absolute rounded-l-[200px] right-[0px] top-[140px] h-[270px] object-cover -z-10 ">
+
+        <img src="assets/images/couple-3.webp" alt="Wedding couple"
+          class="hidden lg:block absolute right-12 bottom-34 w-[356px] h-[244px] object-cover -z-10 ">
+        <img src="assets/images/couple-2.webp" alt="Wedding couple"
+          class="hidden lg:block absolute left-1/3 bottom-32 w-[280px] h-[190px] object-cover -z-10 ">
+
+
+        <!-- Center Content -->
+        <div class="max-w-[820px] mx-auto text-center px-4">
+          <h1
+            class="font-instrument-serif text-[36px] md:text-[42px] lg:text-[48px] leading-[120%] uppercase text-[#23292E]">
+            Wedding Vendor <span class="inline-block bg-[#FBE2B3] rounded-full px-5 py-1">Website Design</span> In
+            Your Local Market
+          </h1>
+        </div>
+
+        <!-- City Badges -->
+        <div class="flex flex-wrap justify-center gap-2 max-w-[960px] mx-auto text-center px-4 mt-8">
+          <span
+            class="flex items-center justify-center px-5 py-2 rounded-full bg-white font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E]">
+            New York City
+          </span>
+          <span
+            class="flex items-center justify-center px-5 py-2 rounded-full bg-white font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E]">
+            Los Angeles
+          </span>
+          <span
+            class="flex items-center justify-center px-5 py-2 rounded-full bg-white font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E]">
+            Chicago
+          </span>
+          <span
+            class="flex items-center justify-center px-5 py-2 rounded-full bg-white font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E]">
+            Houston
+          </span>
+          <span
+            class="flex items-center justify-center px-5 py-2 rounded-full bg-white font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E]">
+            Phoenix
+          </span>
+          <span
+            class="flex items-center justify-center px-5 py-2 rounded-full bg-white font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E]">
+            Philadelphia
+          </span>
+          <span
+            class="flex items-center justify-center px-5 py-2 rounded-full bg-white font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E]">
+            San Antonio
+          </span>
+
+          <span
+            class="flex items-center justify-center px-5 py-2 rounded-full bg-white font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E]">
+            Dallas
+          </span>
+          <span
+            class="flex items-center justify-center px-5 py-2 rounded-full bg-white font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E]">
+            Austin
+          </span>
+          <span
+            class="flex items-center justify-center px-5 py-2 rounded-full bg-white font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E]">
+            Miami
+          </span>
+          <span
+            class="flex items-center justify-center px-5 py-2 rounded-full bg-white font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E]">
+            Atlanta
+          </span>
+          <span
+            class="flex items-center justify-center px-5 py-2 rounded-full bg-white font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E]">
+            Boston
+          </span>
+          <span
+            class="flex items-center justify-center px-5 py-2 rounded-full bg-white font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E]">
+            Seattle
+          </span>
+          <span
+            class="flex items-center justify-center px-5 py-2 rounded-full bg-white font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E]">
+            Denver
+          </span>
+          <span
+            class="flex items-center justify-center px-5 py-2 rounded-full bg-white font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E]">
+            San Francisco
+          </span>
+
+          <span
+            class="flex items-center justify-center px-5 py-2 rounded-full bg-white font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E]">
+            Minneapolis
+          </span>
+          <span
+            class="flex items-center justify-center px-5 py-2 rounded-full bg-white font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E]">
+            Raleigh
+          </span>
+          <span
+            class="flex items-center justify-center px-5 py-2 rounded-full bg-white font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E]">
+            Charlotte
+          </span>
+          <span
+            class="flex items-center justify-center px-5 py-2 rounded-full bg-white font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E]">
+            Nashville
+          </span>
+          <span
+            class="flex items-center justify-center px-5 py-2 rounded-full bg-white font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E]">
+            Toronto
+          </span>
+        </div>
+      </div>
+
+      <!-- Buttons -->
+      <div class="flex flex-wrap items-center justify-center gap-6 mt-10">
+        <a href="#"
+          class="rounded-full bg-[#F1BFBE] hover:bg-[#ffe5e5] duration-100 transition-all text-[#23292E] font-instrument-serif text-[20px] leading-[110%] uppercase px-7 py-3.5">
+          Book A Free 15-Min Call
+        </a>
+        <a href="#"
+          class="font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E] underline underline-offset-4">
+          See Our Wedding Work
+        </a>
+      </div>
+    </div>
+
+    <!-- Bottom trust row -->
+    <div
+      class="relative z-10 mt-20 lg:mt-32 flex flex-wrap justify-between max-w-[1120px] mx-auto w-full items-center gap-x-10 gap-y-6">
+
+      <div class="flex items-center gap-2">
+        <img src="assets/images/wedding-service-check.svg" class="img-fluid" alt="wedding-service-check">
+        <span class="font-instrument-serif uppercase text-[#23292E] text-[18px] sm:text-2xl leading-[110%]">Trusted by
+          vendors</span>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <img src="assets/images/wedding-service-check.svg" class="img-fluid" alt="wedding-service-check">
+        <span class="font-instrument-serif uppercase text-[#23292E] text-[18px] sm:text-2xl leading-[110%]">Global US
+          coverage</span>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <img src="assets/images/wedding-service-check.svg" class="img-fluid" alt="wedding-service-check">
+        <span class="font-instrument-serif uppercase text-[#23292E] text-[18px] sm:text-2xl leading-[110%]">14-day
+          delivery</span>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <img src="assets/images/wedding-service-check.svg" class="img-fluid" alt="wedding-service-check">
+        <span class="font-instrument-serif uppercase text-[#23292E] text-[18px] sm:text-2xl leading-[110%]">No monthly
+          retainers</span>
+      </div>
+
+    </div>
+  </section>
+  <!-- local market section  -->
+
+
+
+
+
+
+
+  <!-- weeding website section  -->
+  <section class="section-padding bg-white">
+    <div class="container">
+      <!-- Title -->
+      <div class="max-w-[900px] mx-auto text-center mb-16">
+        <h2
+          class="text-[#23292E] font-instrument-serif text-[36px] md:text-[42px] lg:text-[48px] font-normal leading-[120%] uppercase">
+          Real Wedding Vendor <span
+            class="inline-block bg-[#FFEBC8] border border-[#FAD18B] rounded-full px-3 py-1">Websites</span> We've Built
+        </h2>
+        <p class="text-[#555B54] text-lg leading-[130%] mt-6">
+          Click any case study for the redesign rationale, the SEO keyword targets, and the inquiry volume after launch.
+        </p>
+      </div>
+
+      <!-- Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <!-- Card 01 -->
+        <div class="rounded-4xl  overflow-hidden flex flex-col gap-1">
+          <img src="assets/images/weeding-website-1.webp" alt="Marin Hollis Photography"
+            class="w-full md:h-[276px] object-cover rounded-4xl">
+          <div class="p-6 rounded-4xl bg-[#FBF7F6]">
+            <span
+              class="inline-flex items-center justify-center gap-2.5 px-2 py-1 rounded-full bg-[#F1BFBE] font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E]">
+              Photographer
+            </span>
+            <h3 class="font-instrument-serif text-[28px] leading-[130%] uppercase text-[#23292E] mt-4">
+              Marin Hollis Photography
+            </h3>
+            <p class="text-[#555B54] text-lg leading-[130%] mt-3">
+              Inquiries up 247% in 90 days. Booked 14 months out for 2026 season.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 02 -->
+        <div class="rounded-4xl  overflow-hidden flex flex-col gap-1">
+          <img src="assets/images/weeding-website-2.webp" alt="The Linden Estate"
+            class="w-full md:h-[276px] object-cover rounded-4xl">
+          <div class="p-6 rounded-4xl bg-[#FBF7F6]">
+            <span
+              class="inline-flex items-center justify-center gap-2.5 px-2 py-1 rounded-full bg-[#F1BFBE] font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E]">
+              Venue
+            </span>
+            <h3 class="font-instrument-serif text-[28px] leading-[130%] uppercase text-[#23292E] mt-4">
+              The Linden Estate
+            </h3>
+            <p class="text-[#555B54] text-lg leading-[130%] mt-3">
+              Tour bookings 3 → 22 per month. Booked through Q4 2026 by month five.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 03 -->
+        <div class="rounded-4xl  overflow-hidden flex flex-col gap-1">
+          <img src="assets/images/weeding-website-3.webp" alt="Atelier Norris"
+            class="w-full md:h-[276px] object-cover rounded-4xl">
+          <div class="p-6 rounded-4xl bg-[#FBF7F6]">
+            <span
+              class="inline-flex items-center justify-center gap-2.5 px-2 py-1 rounded-full bg-[#F1BFBE] font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E]">
+              Planner
+            </span>
+            <h3 class="font-instrument-serif text-[28px] leading-[130%] uppercase text-[#23292E] mt-4">
+              Atelier Norris
+            </h3>
+            <p class="text-[#555B54] text-lg leading-[130%] mt-3">
+              Full-service inquiries doubled. Average wedding budget served grew 38%.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- weeding website section  -->
+
+
+
+  <!-- weeding business section  -->
+  <section class=" bg-white">
+    <div class="rounded-[96px] bg-[#FBF7F6]">
+      <div class="container">
+        <div class="rounded-[96px] bg-[#FBF7F6] px-6 md:px-16 py-16 lg:py-24">
+
+          <!-- Title -->
+          <div class="max-w-[1000px] mx-auto text-center mb-16">
+            <h2
+              class="text-[#23292E] font-instrument-serif text-[36px] md:text-[42px] lg:text-[48px] font-normal leading-[120%] uppercase">
+              The Right <span
+                class="inline-block bg-[#FFEBC8] border border-[#FAD18B] rounded-full px-3 py-1">Platform</span> For
+              Your Wedding Business
+            </h2>
+            <p class="text-[#555B54] text-lg leading-[130%] mt-6">
+              We default to WordPress for SEO control and Webflow for visual-heavy vendors (photographers,
+              venues, florists). CRM and gallery host integrate into either.
+            </p>
+          </div>
+
+          <!-- Table -->
+          <div class="overflow-x-auto">
+            <table class="w-full min-w-[800px] border-separate border-spacing-y-1">
+              <thead>
+                <tr class="rounded-[24px] bg-[#23292E]">
+                  <th
+                    class="text-left font-instrument-serif text-[28px] leading-[130%] uppercase text-white font-normal rounded-l-[24px] px-6 py-5">
+                    Features
+                  </th>
+                  <th
+                    class="text-left font-instrument-serif text-[28px] leading-[130%] uppercase text-white font-normal px-6 py-5">
+                    WordPress
+                  </th>
+                  <th
+                    class="text-left font-instrument-serif text-[28px] leading-[130%] uppercase text-white font-normal px-6 py-5">
+                    Webflow
+                  </th>
+                  <th
+                    class="text-left font-instrument-serif text-[28px] leading-[130%] uppercase text-white font-normal rounded-r-[24px] px-6 py-5">
+                    Squarespace
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-white">
+                  <td class="text-[#555B54] text-lg leading-[130%] rounded-l-[24px] px-6 py-5">Best for</td>
+                  <td class="text-[#555B54] text-lg leading-[130%] px-6 py-5">SEO-heavy, multi-page</td>
+                  <td class="text-[#555B54] text-lg leading-[130%] px-6 py-5">Visual single-vendor</td>
+                  <td class="text-[#555B54] text-lg leading-[130%] rounded-r-[24px] px-6 py-5">DIY before this package
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="text-[#555B54] text-lg leading-[130%] rounded-l-[24px] px-6 py-5">SEO control</td>
+                  <td class="text-[#555B54] text-lg leading-[130%] px-6 py-5">Full</td>
+                  <td class="text-[#555B54] text-lg leading-[130%] px-6 py-5">Strong</td>
+                  <td class="text-[#555B54] text-lg leading-[130%] rounded-r-[24px] px-6 py-5">Limited</td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="text-[#555B54] text-lg leading-[130%] rounded-l-[24px] px-6 py-5">Gallery handling</td>
+                  <td class="text-[#555B54] text-lg leading-[130%] px-6 py-5">Pixieset / Pic-Time embed</td>
+                  <td class="text-[#555B54] text-lg leading-[130%] px-6 py-5">Pixieset / Pic-Time embed</td>
+                  <td class="text-[#555B54] text-lg leading-[130%] rounded-r-[24px] px-6 py-5">Native or embed</td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="text-[#555B54] text-lg leading-[130%] rounded-l-[24px] px-6 py-5">CRM integration</td>
+                  <td class="text-[#555B54] text-lg leading-[130%] px-6 py-5">HoneyBook / Dubsado / 17hats</td>
+                  <td class="text-[#555B54] text-lg leading-[130%] px-6 py-5">HoneyBook / Dubsado / 17hats</td>
+                  <td class="text-[#555B54] text-lg leading-[130%] rounded-r-[24px] px-6 py-5">Form-only</td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="text-[#555B54] text-lg leading-[130%] rounded-l-[24px] px-6 py-5">Monthly cost</td>
+                  <td class="text-[#555B54] text-lg leading-[130%] px-6 py-5">$15–35</td>
+                  <td class="text-[#555B54] text-lg leading-[130%] px-6 py-5">$23–39</td>
+                  <td class="text-[#555B54] text-lg leading-[130%] rounded-r-[24px] px-6 py-5">$23–49</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Subtitle -->
+          <h3 class="font-instrument-serif text-[28px] leading-[130%] uppercase text-[#23292E] text-center mt-16 mb-8">
+            Integrations Built Into Every Package
+          </h3>
+
+          <!-- Integration Badges -->
+          <div class="flex flex-wrap justify-center gap-2 max-w-[1000px] w-full mx-auto px-2">
+            <span
+              class="flex items-center justify-center px-5 py-3 rounded-full bg-white font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E]">
+              Honeybook
+            </span>
+            <span
+              class="flex items-center justify-center px-5 py-3 rounded-full bg-white font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E]">
+              Dubsado
+            </span>
+            <span
+              class="flex items-center justify-center px-5 py-3 rounded-full bg-white font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E]">
+              17 Hats
+            </span>
+            <span
+              class="flex items-center justify-center px-5 py-3 rounded-full bg-white font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E]">
+              Aisle Planner
+            </span>
+            <span
+              class="flex items-center justify-center px-5 py-3 rounded-full bg-white font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E]">
+              Pixieset
+            </span>
+            <span
+              class="flex items-center justify-center px-5 py-3 rounded-full bg-white font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E]">
+              Pic-Time
+            </span>
+            <span
+              class="flex items-center justify-center px-5 py-3 rounded-full bg-white font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E]">
+              Shootproof
+            </span>
+
+            <span
+              class="flex items-center justify-center px-5 py-3 rounded-full bg-white font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E]">
+              The Knot
+            </span>
+            <span
+              class="flex items-center justify-center px-5 py-3 rounded-full bg-white font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E]">
+              Weddingwire
+            </span>
+            <span
+              class="flex items-center justify-center px-5 py-3 rounded-full bg-white font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E]">
+              Zola
+            </span>
+            <span
+              class="flex items-center justify-center px-5 py-3 rounded-full bg-white font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E]">
+              Calendly
+            </span>
+            <span
+              class="flex items-center justify-center px-5 py-3 rounded-full bg-white font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E]">
+              Mailchimp / Flodesk
+            </span>
+            <span
+              class="flex items-center justify-center px-5 py-3 rounded-full bg-white font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E]">
+              Pinterest
+            </span>
+            <span
+              class="flex items-center justify-center px-5 py-3 rounded-full bg-white font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E]">
+              Instagram Feed
+            </span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- weeding business section  -->
+
+
+
+  <!-- Weeding subscription section -->
+  <section class="section-padding bg-white">
+    <div class="">
+      <div class="container">
+        <!-- Title -->
+        <div class="max-w-250 mx-auto text-center mb-16">
+          <h2
+            class="text-[#23292E] font-instrument-serif text-[36px] md:text-[42px] lg:text-[48px] font-normal leading-[120%] uppercase">
+            <span class="inline-block bg-[#FFEBC8] border border-[#FAD18B] rounded-full px-3 py-1">Pixxen vs The
+              Knot</span> listing vs full-service wedding marketing agency
+          </h2>
+          <p class="text-[#555B54] text-lg leading-[130%] mt-6">
+            Three honest paths. Each fits a different vendor. Here's the math, no spin.
+          </p>
+        </div>
+
+        <!-- subscribe plan -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8  mb-6 md:mb-12">
+          <!-- card  -->
+          <div class="bg-[#FBF7F6] rounded-4xl p-8 flex flex-col justify-between ">
+            <div>
+              <span
+                class="font-instrument-serif inline-block bg-[#F1BFBE] text-[#23292E] text-xl font-normal leading-[110%] uppercase px-2 py-1 rounded-full mb-4">
+                Directory Only
+              </span>
+              <h3 class="text-[#23292E] font-instrument-serif text-[28px] leading-[130%] uppercase mb-4">The Knot
+                Featured Listing</h3>
+              <p class="text-[#555B54] text-lg font-normal leading-[130%]">$400–1,000/month for a profile on someone
+                else's platform.</p>
+              <hr class="border-[#C7C6C6] my-6" />
+
+              <ul class="space-y-3 md:space-y-4 text-[#555B54]">
+                <li class="flex items-start gap-2">
+                  <img src="assets/images/wedding-service-check.svg" alt="Wedding service check" class=" shrink-0" />
+                  <span class="flex-1 text-base md:text-lg leading-[130%]">
+                    $5K–12K/year ongoing
+                  </span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <img src="assets/images/wedding-service-check.svg" alt="Wedding service check" class=" shrink-0" />
+                  <span class="flex-1 text-base md:text-lg leading-[130%]">
+                    No site you own
+                  </span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <img src="assets/images/wedding-service-check.svg" alt="Wedding service check" class=" shrink-0" />
+                  <span class="flex-1 text-base md:text-lg leading-[130%]">
+                    SEO benefits The Knot
+                  </span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <img src="assets/images/wedding-service-check.svg" alt="Wedding service check" class=" shrink-0" />
+                  <span class="flex-1 text-base md:text-lg leading-[130%]">
+                    Shared inquiries
+                  </span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <img src="assets/images/wedding-service-check.svg" alt="Wedding service check" class=" shrink-0" />
+                  <span class="flex-1 text-base md:text-lg leading-[130%]">
+                    Stop paying, lose visibility
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- card  -->
+          <div class="bg-[#F1BFBE] rounded-4xl p-8 flex flex-col justify-between ">
+            <div>
+              <span
+                class="font-instrument-serif inline-block bg-[#23292E] text-[#F1BFBE] text-xl font-normal leading-[110%] uppercase px-2 py-1 rounded-full mb-4">
+                Recommended for most
+              </span>
+              <h3 class="text-[#23292E] font-instrument-serif text-[28px] leading-[130%] uppercase mb-4">Pixxen $999
+                Pack</h3>
+              <p class="text-[#23292E] text-lg font-normal leading-[130%]">Full custom site, owned by you, ranks for
+                real wedding searches.</p>
+              <hr class="border-[#23292E] my-6" />
+
+              <ul class="space-y-3 md:space-y-4 text-[#555B54]">
+                <li class="flex items-start gap-2">
+                  <img src="assets/images/wedding-service-check.svg" alt="Wedding service check" class=" shrink-0" />
+                  <span class="flex-1 text-base md:text-lg leading-[130%]">
+                    $5K–12K/year ongoing
+                  </span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <img src="assets/images/wedding-service-check.svg" alt="Wedding service check" class=" shrink-0" />
+                  <span class="flex-1 text-base md:text-lg leading-[130%]">
+                    No site you own
+                  </span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <img src="assets/images/wedding-service-check.svg" alt="Wedding service check" class=" shrink-0" />
+                  <span class="flex-1 text-base md:text-lg leading-[130%]">
+                    SEO benefits The Knot
+                  </span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <img src="assets/images/wedding-service-check.svg" alt="Wedding service check" class=" shrink-0" />
+                  <span class="flex-1 text-base md:text-lg leading-[130%]">
+                    Shared inquiries
+                  </span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <img src="assets/images/wedding-service-check.svg" alt="Wedding service check" class=" shrink-0" />
+                  <span class="flex-1 text-base md:text-lg leading-[130%]">
+                    Stop paying, lose visibility
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- card  -->
+          <div class="bg-[#FBF7F6] rounded-4xl p-8 flex flex-col justify-between ">
+            <div>
+              <span
+                class="font-instrument-serif inline-block bg-[#F1BFBE] text-[#23292E] text-xl font-normal leading-[110%] uppercase px-2 py-1 rounded-full mb-4">
+                Full service
+              </span>
+              <h3 class="text-[#23292E] font-instrument-serif text-[28px] leading-[130%] uppercase mb-4">Agency retainer
+              </h3>
+              <p class="text-[#555B54] text-lg font-normal leading-[130%]">$8K–18K upfront + $1.5K–4K/month for ongoing.
+              </p>
+              <hr class="border-[#C7C6C6] my-6" />
+
+              <ul class="space-y-3 md:space-y-4 text-[#555B54]">
+                <li class="flex items-start gap-2">
+                  <img src="assets/images/wedding-service-check.svg" alt="Wedding service check" class=" shrink-0" />
+                  <span class="flex-1 text-base md:text-lg leading-[130%]">
+                    $25K–60K/year total
+                  </span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <img src="assets/images/wedding-service-check.svg" alt="Wedding service check" class=" shrink-0" />
+                  <span class="flex-1 text-base md:text-lg leading-[130%]">
+                    Often agency-locked
+                  </span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <img src="assets/images/wedding-service-check.svg" alt="Wedding service check" class=" shrink-0" />
+                  <span class="flex-1 text-base md:text-lg leading-[130%]">
+                    60–90 days to launch
+                  </span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <img src="assets/images/wedding-service-check.svg" alt="Wedding service check" class=" shrink-0" />
+                  <span class="flex-1 text-base md:text-lg leading-[130%]">
+                    Ongoing PPC and content
+                  </span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <img src="assets/images/wedding-service-check.svg" alt="Wedding service check" class=" shrink-0" />
+                  <span class="flex-1 text-base md:text-lg leading-[130%]">
+                    Worth it at $100K+/year
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="max-w-184 mx-auto text-center">
+          <p class="text-[#555B54] text-lg leading-[130%]">
+            Solo or boutique wedding vendor doing $80K–$500K annual revenue, wanting a real branded site without a
+            retainer? Pixxen. Brand-new vendor with zero portfolio and no budget? Start with a Knot Featured listing for
+            6–12 months until you have real work to show. Established multi-vendor studio doing $1M+ with PPC budget?
+            You need a full-service agency, not us. Many vendors keep the directory listings AND build with us — they're
+            complementary, not exclusive.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- Weeding subscription section -->
+
+
+  <!-- process section  -->
+  <section class=" bg-white overflow-hidden">
+    <div class="rounded-[96px] bg-[#FBF7F6] px-6 md:px-16 py-16 lg:py-24">
+      <div class="container">
+        <!-- Title -->
+        <div class="max-w-[900px] mx-auto text-center mb-16">
+          <h2
+            class="text-[#23292E] font-instrument-serif text-[36px] md:text-[42px] lg:text-[48px] font-normal leading-[120%] uppercase">
+            What to actually expect from your
+            <span class="inline-block bg-[#FFEBC8] border border-[#FAD18B] rounded-full px-3 py-1">wedding
+              vendor</span>SEO
+          </h2>
+          <p class="text-[#555B54] text-lg leading-[130%] mt-6 max-w-[720px] mx-auto">
+            Honest up-front beats a sales pitch every time. Here's the realistic timeline for organic inquiry growth,
+            based on what we see across 50+ wedding vendor launches.
+          </p>
+        </div>
+
+        <!-- Wave Timeline -->
+        <div class="relative min-h-[416px] mt-12 flex items-center justify-between w-full">
+          <!-- Wave background image (desktop only) -->
+          <img src="assets/images/weeding-service-wave-shape.svg" alt=""
+            class="hidden md:block w-full h-auto select-none pointer-events-none absolute top-1/2 -translate-y-1/2">
+
+          <!-- Cards over the wave -->
+          <div class="hidden md:grid grid-cols-4 w-full">
+            <!-- Step 1 -->
+            <div class="flex flex-col items-center text-center px-4">
+              <span
+                class="font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E] bg-[#F1BFBE] rounded-full px-2 py-1">
+                Days 1
+              </span>
+              <h3 class="font-instrument-serif text-[28px] leading-[130%] uppercase text-[#23292E] my-4">
+                Launch
+              </h3>
+              <p class="text-[#555B54] text-lg leading-[130%] max-w-[260px]">
+                Site live, GBP optimized. Direct traffic from Pinterest, Instagram, and referrals converts better
+                immediately.
+              </p>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="flex flex-col items-center text-center px-4 ">
+              <span
+                class="font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E] bg-[#F1BFBE] rounded-full px-2 py-1">
+                Week 2–4
+              </span>
+              <h3 class="font-instrument-serif text-[28px] leading-[130%] uppercase text-[#23292E] my-4">
+                First impressions
+              </h3>
+              <p class="text-[#555B54] text-lg leading-[130%] max-w-[260px]">
+                Google indexes pages. Real wedding feature pages start ranking long-tail. First 3–10 organic inquiries.
+              </p>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="flex flex-col items-center text-center px-4">
+              <span
+                class="font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E] bg-[#F1BFBE] rounded-full px-2 py-1">
+                Month 2–3
+              </span>
+              <h3 class="font-instrument-serif text-[28px] leading-[130%] uppercase text-[#23292E] my-4">
+                First real lift
+              </h3>
+              <p class="text-[#555B54] text-lg leading-[130%] max-w-[260px]">
+                Long-tail queries rank ('Hotel Emma wedding photographer,' 'Charleston elopement planner'). Local 3-pack
+                for niche searches.
+              </p>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="flex flex-col items-center text-center px-4 ">
+              <span
+                class="font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E] bg-[#F1BFBE] rounded-full px-2 py-1">
+                Month 4–6
+              </span>
+              <h3 class="font-instrument-serif text-[28px] leading-[130%] uppercase text-[#23292E] my-4">
+                Compounding
+              </h3>
+              <p class="text-[#555B54] text-lg leading-[130%] max-w-[260px]">
+                Real weddings stack up. Long-tail traffic compounds. Inquiries 2–4x baseline. Some vendors hit
+                booked-out 12+ months out.
+              </p>
+            </div>
+          </div>
+
+          <!-- Mobile fallback: simple stacked list, no wave -->
+          <div class="grid grid-cols-1 gap-10 md:hidden">
+            <div class="flex flex-col items-center text-center">
+              <span
+                class="font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E] bg-[#F1BFBE] rounded-full px-2 py-1">
+                Days 1-2
+              </span>
+              <h3 class="font-instrument-serif text-[28px] leading-[130%] uppercase text-[#23292E] my-4">
+                Discovery
+              </h3>
+              <p class="text-[#555B54] text-lg leading-[130%] max-w-[320px]">
+                90-min kickoff. Portfolio audit. CRM and gallery host setup. Competitor review of three vendors
+                outranking you.
+              </p>
+            </div>
+
+            <div class="flex flex-col items-center text-center">
+              <span
+                class="font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E] bg-[#F1BFBE] rounded-full px-2 py-1">
+                Days 3-7
+              </span>
+              <h3 class="font-instrument-serif text-[28px] leading-[130%] uppercase text-[#23292E] my-4">
+                Brand + Design
+              </h3>
+              <p class="text-[#555B54] text-lg leading-[130%] max-w-[320px]">
+                Logo, palette, typography. Wireframes and comps. Aesthetic direction matched to portfolio. One
+                revision built in.
+              </p>
+            </div>
+
+            <div class="flex flex-col items-center text-center">
+              <span
+                class="font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E] bg-[#F1BFBE] rounded-full px-2 py-1">
+                Days 8-12
+              </span>
+              <h3 class="font-instrument-serif text-[28px] leading-[130%] uppercase text-[#23292E] my-4">
+                Build + SEO
+              </h3>
+              <p class="text-[#555B54] text-lg leading-[130%] max-w-[320px]">
+                Mobile-first build. SEO content per real wedding. Schema. Gallery and CRM integration. Image
+                optimization.
+              </p>
+            </div>
+
+            <div class="flex flex-col items-center text-center">
+              <span
+                class="font-instrument-serif text-[20px] leading-[110%] uppercase text-[#23292E] bg-[#F1BFBE] rounded-full px-2 py-1">
+                Days 13-14
+              </span>
+              <h3 class="font-instrument-serif text-[28px] leading-[130%] uppercase text-[#23292E] my-4">
+                Launch + GBP
+              </h3>
+              <p class="text-[#555B54] text-lg leading-[130%] max-w-[320px]">
+                DNS, Search Console, GBP rebuild, CMS training, directory listing optimization, handoff.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- process section  -->
+
+
+  <!-- What we won't promise -->
+  <section class="section-padding bg-white ">
+    <div class="container ">
+      <!-- Title -->
+      <div class="max-w-[900px] mx-auto text-center mb-16">
+        <h2
+          class="text-[#23292E] font-instrument-serif text-[36px] md:text-[42px] lg:text-[48px] font-normal leading-[120%] uppercase">
+          What we
+          <span class="inline-block bg-[#FFEBC8] border border-[#FAD18B] rounded-full px-3 py-1">won't promise</span>
+        </h2>
+        <p class="text-[#555B54] text-lg leading-[130%] mt-6 max-w-[720px] mx-auto">
+          Every feature is built to increase booked inquiries, not to decorate your website.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+
+        <!-- item -->
+        <div class="border border-dashed border-[#C7C6C6] rounded-4xl px-6 py-8 flex flex-col items-center text-center">
+          <div class=" flex items-center justify-center mb-8">
+            <img src="assets/images/weeding-location-mark.svg" class="img-fluid" alt="features icon">
+          </div>
+          <h3
+            class="font-instrument-serif text-[28px] leading-[130%] uppercase text-[#23292E] flex items-center justify-center mb-4">
+            Page One Ranking <br> Reality Check
+          </h3>
+          <p class="text-[#555B54] text-lg leading-[130%]">
+            Page-one rankings on day one for major-city wedding keywords are highly competitive, dominated by The Knot
+            and established vendors, but we target niche, venue-specific terms and achieve strong rankings within 60–120
+            days.
+          </p>
+        </div>
+        <!-- item -->
+        <div class="border border-dashed border-[#C7C6C6] rounded-4xl px-6 py-8 flex flex-col items-center text-center">
+          <div class=" flex items-center justify-center mb-8">
+            <img src="assets/images/weeding-money-bag.svg" class="img-fluid" alt="features icon">
+          </div>
+          <h3
+            class="font-instrument-serif text-[28px] leading-[130%] uppercase text-[#23292E] flex items-center justify-center mb-4">
+            Competing With Major Wedding Directories
+          </h3>
+          <p class="text-[#555B54] text-lg leading-[130%]">
+            Outranking The Knot, WeddingWire, or Zola in directory results. They have decades of SEO authority. We can
+            win the local 3-pack, the venue-specific keywords, and the long-tail real-wedding queries they don't
+            optimize for individually.
+          </p>
+        </div>
+        <!-- item -->
+        <div class="border border-dashed border-[#C7C6C6] rounded-4xl px-6 py-8 flex flex-col items-center text-center">
+          <div class=" flex items-center justify-center mb-8">
+            <img src="assets/images/weeding-envelop-mail.svg" class="img-fluid" alt="features icon">
+          </div>
+          <h3
+            class="font-instrument-serif text-[28px] leading-[130%] uppercase text-[#23292E] flex items-center justify-center mb-4">
+            Sustainable Inquiry Without Ongoing Effort
+          </h3>
+          <p class="text-[#555B54] text-lg leading-[130%]">
+            Inquiries without you maintaining the site. Real wedding pages are SEO gold but only if you keep adding
+            them. The site brings the inquiries. You have to keep feeding it with the work you actually book.
+          </p>
+        </div>
+        <!-- item -->
+        <div class="border border-dashed border-[#C7C6C6] rounded-4xl px-6 py-8 flex flex-col items-center text-center">
+          <div class=" flex items-center justify-center mb-8">
+            <img src="assets/images/weeding-duration-timer.svg" class="img-fluid" alt="features icon">
+          </div>
+          <h3
+            class="font-instrument-serif text-[28px] leading-[130%] uppercase text-[#23292E] flex items-center justify-center mb-4">
+            Seasonal Timing Impacts Wedding Bookings
+          </h3>
+          <p class="text-[#555B54] text-lg leading-[130%]">
+            Results in your peak season starting in the off-season. Wedding planning peaks January through April
+            (engagement season). A May launch will see slower initial inquiry volume than a January launch — that's the
+            buying cycle, not the site.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- What we won't promise  -->
+
+
+  <!--  -->
+  <section class="section-padding bg-[#FBF7F6] ">
+    <div class="container ">
+
+      <!-- Title -->
+      <div class="max-w-262.5 mx-auto text-center mb-16">
+        <h2
+          class="text-[#23292E] font-instrument-serif text-[36px] md:text-[42px] lg:text-[48px] font-normal leading-[120%] uppercase">
+
+          <span class="inline-block bg-[#FFEBC8] border border-[#FAD18B] rounded-full px-3 py-1">Reviews</span> from
+          wedding vendors we've built sites for
+        </h2>
+        <p class="text-[#555B54] text-lg leading-[130%] mt-6 max-w-[720px] mx-auto">
+          Placeholder quotes — to be replaced with real client testimonials before launch.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 ">
+
+        <div
+          class="bg-white rounded-[32px] p-8 md:p-12 pb-0 md:pb-0 flex flex-col md:flex-row justify-between relative overflow-hidden min-h-[460px]">
+          <div class="flex flex-col justify-between z-10 w-full md:w-[55%] pb-8 md:pb-12">
+            <div>
+
+              <h3 class="font-instrument-serif text-[28px] leading-[130%] uppercase text-[#23292E] mb-4">
+                Saved Serious Money
+              </h3>
+              <p class="text-[#555B54] text-lg leading-[130%]">
+                I'd been paying The Knot $700 a month for two years and never knew if it was working. Pixxen built me a
+                real site for $999, integrated HoneyBook properly, and within four months I was getting more inquiries
+                from my own site than from the directory. I dropped the Knot listing in month six and didn't lose a
+                single inquiry.
+              </p>
+            </div>
+
+            <div class="mt-8">
+              <h4 class="font-instrument-serif text-[18px] leading-[130%] uppercase text-[#23292E]">Marin Hollis</h4>
+              <p class="text-[#555B54] text-sm leading-[130%] mt-[6px]">Owner, Marin Hollis Photography (Charleston)</p>
+            </div>
+          </div>
+
+          <div class="w-full md:w-[45%] flex items-end justify-center md:justify-end mt-4 md:mt-0 relative">
+            <div
+              class="absolute top-0 right-4 md:right-0 bg-[#F1C2B8] bg-opacity-40 text-[#23292E] w-12 h-12 rounded-full flex items-center justify-center font-serif text-3xl font-bold">
+              ”</div>
+            <img src="assets/images/weeding-testimonial-client1.png" alt="Marin Hollis"
+              class=" object-contain object-bottom" />
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <!--  -->
+
+  <!-- cta section start -->
+  <section class="cta-sections  overflow-hidden section-padding bg-[#36432A] text-center relative">
+    <img src="assets/images/shape-top.png"
+      class="img-fluid absolute top-0 left-0 xl:max-w-full lg:max-w-75 md:max-w-50 sm:max-w-37.5 sm:block hidden"
+      alt="">
+    <img src="assets/images/shape-right.png"
+      class="img-fluid absolute bottom-0 right-0 xl:max-w-full lg:max-w-75 md:max-w-50 sm:max-w-37.5 sm:block hidden"
+      alt="">
+
+    <div class="container">
+      <div class="cta-wrap z-80 relative">
+        <div class="max-w-[914px] mx-auto">
+
+          <div class="text-center max-w-3xl mx-auto sm:mb-12 mb-6">
+            <span
+              class="font-imperial-script text-[#BD8600] text-4xl md:text-5xl lg:text-6xl 2xl:text-[80px] font-normal leading-none ">Ready
+              when you are</span>
+            <h2
+              class="font-imbue text-white lg:my-6 my-4 font-extralight leading-none text-[32px] md:text-4xl lg:text-5xl xl:text-[56px] 2xl:text-[64px]">
+              Ready for a website that turns 'salon near me' searches into booked appointments?
+            </h2>
+            <p class="sm:text-base text-sm text-[#BEC5B7]  leading-[150%]">
+              Book a free 15-minute call. We'll review your current site, audit your top three competitors who outrank
+              you, name the three biggest leaks costing you appointments right now, and tell you honestly whether the
+              Pixxen Salon and Spa Pack fits — or whether you need something bigger.
+            </p>
+
+            <div class="flex items-stretch justify-center w-full">
+              <a href="contact.html"
+                class="mt-8 font-instrument-serif inline-flex items-center justify-center gap-[10px] bg-[#BD8600] px-5 md:px-8 md:py-5 py-3  text-[16px] font-bold uppercase tracking-wide text-white transition-colors hover:bg-[#a87700]">
+                Book a free 15-min call
+              </a>
+            </div>
+          </div>
+
+
+
+        </div>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- cta section end -->
+
+
+
+
+
+
+  <!-- footer section start -->
+  <footer class="relative ">
+    <div class="bg-gradient-to-b bg-[#36432A] text-white  border-t border-b border-[#56614C] ">
+      <div class="container">
+        <!-- Desktop Grid Layout -->
+        <div class="grid md:grid-cols-12 md:gap-8 lg:gap-12">
+
+          <div
+            class="lg:col-span-8 md:col-span-7 md:py-12 py-6 flex flex-col gap-25 justify-between md:border-b-0 border-b border-[#56614C]">
+            <div class="grid md:grid-cols-4 grid-cols-2 xl:gap-8 gap-4">
+              <!-- Services Column -->
+              <div class="">
+                <h3 class="text-[#fff] text-base sm:text-lg md:text-xl font-semibold mb-3 lg:mb-6">Services</h3>
+                <ul class="space-y-2 lg:space-y-3">
+                  <li><a href="mobile-app-design.html"
+                      class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">MOBILE
+                      APP DESIGN</a></li>
+                  <li><a href="dashboard-design.html"
+                      class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">DASHBOARD
+                      DESIGN</a></li>
+                  <li><a href="website-design.html"
+                      class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">WEBSITE
+                      DESIGN</a></li>
+                  <li><a href="web-application-design.html"
+                      class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">WEB
+                      APP DESIGN</a></li>
+                  <li><a href="saas-design.html"
+                      class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">SAAS
+                      DESIGN</a></li>
+                  <li><a href="branding-design.html"
+                      class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">BRANDING</a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Pixxen Column -->
+              <div class="">
+                <h3 class="text-[#fff] text-base sm:text-lg md:text-xl font-semibold mb-3 lg:mb-6">Pixxen</h3>
+                <ul class="space-y-2 lg:space-y-3">
+                  <li><a href="about.html"
+                      class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">ABOUT</a>
+                  </li>
+                  <li><a href="contact.html"
+                      class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">CONTACT</a>
+                  </li>
+                  <li><a href="career.html"
+                      class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">CAREER</a>
+                  </li>
+                  <li><a href="team.html"
+                      class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">TEAM</a>
+                  </li>
+                </ul>
+
+
+              </div>
+
+              <!-- Resources Column -->
+              <div class="">
+                <h3 class="text-[#fff] text-base sm:text-lg md:text-xl font-semibold mb-3 lg:mb-6">Resources</h3>
+                <ul class="space-y-2 lg:space-y-3">
+                  <li><a href="case-study.html"
+                      class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">CASE
+                      STUDIES</a>
+                  </li>
+                  <li><a href="blog.html"
+                      class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">BLOGS</a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Legal Column -->
+              <div class="">
+                <h3 class="text-[#fff] text-base sm:text-lg md:text-xl font-semibold mb-3 lg:mb-6">Legal</h3>
+                <ul class="space-y-2 lg:space-y-3">
+                  <li><a href="terms.html"
+                      class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">TERMS</a>
+                  </li>
+                  <li><a href="privacy.html"
+                      class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">PRIVACY</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Copyright -->
+            <div class="mt-8 lg:mt-0 pt-6 lg:pt-0 border-t border-[#56614C] lg:border-0 md:block hidden">
+              <p class="text-[#fff] text-sm text-center lg:text-left">© 2026 PIXXEN</p>
+            </div>
+          </div>
+
+          <!-- Newsletter Column -->
+          <div
+            class="md:pl-10 lg:pl-14 md:border-l  border-[#56614C] lg:col-span-4 md:col-span-5 md:py-12 sm:py-8 py-6 flex flex-col justify-between gap-5">
+            <div>
+              <h3 class="text-[#fff] md:text-lg text-base font-semibold md:mb-3 mb-2 lg:mb-4">Join 5,000+
+                design lovers.</h3>
+              <p class="text-[#fff] sm:text-sm text-[12px] mb-4 lg:mb-6">Monthly design insights, case
+                studies, and
+                inspiration straight to your inbox.</p>
+
+              <!-- Email Input -->
+              <div class="relative mb-3 md:mb-8 lg:mb-12">
+                <input type="email" placeholder="Email address"
+                  class="w-full bg-transparent border border-[#56614C] rounded-2xl px-4 py-5 lg:py-3.5 h-16 text-white placeholder-[#56614C] focus:outline-none focus:border-[#56614C] transition-colors text-sm lg:text-base pr-14" />
+                <button
+                  class="absolute group cursor-pointer right-px top-1/2 -translate-y-1/2 bg-[#56614C] hover:bg-[#56614C] p-5 rounded-r-2xl transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
+                    <path
+                      d="M16.2288 9.03763L9.0768 1.88561L10.9624 0L21.3333 10.371L10.9624 20.7418L9.0768 18.8562L16.2288 11.7043H0V9.03763H16.2288Z"
+                      fill="white" />
+                  </svg>
+
+                </button>
+              </div>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="flex md:justify-start justify-center md:gap-2 gap-1 lg:gap-2">
+              <a href="#"
+                class="bg-[#56614C] hover:bg-[#BD8600] p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M19.9887 11.5716C19.9029 9.94513 19.3313 8.44745 18.4163 7.22097C18.1749 7.48407 17.8785 7.7698 17.4957 8.09159C16.5881 8.85458 15.4887 9.54307 14.1834 10.101C14.3498 10.4506 14.5029 10.7899 14.6376 11.1098L14.6388 11.1125C14.6652 11.1742 14.6879 11.2306 14.7321 11.3418C14.7379 11.3562 14.7433 11.3697 14.7485 11.3825C16.2621 11.2122 17.8576 11.2749 19.4049 11.4845C19.6106 11.5123 19.805 11.5415 19.9887 11.5716ZM10.6044 4.1213C10.7783 4.36621 10.9602 4.62859 11.1803 4.95378C11.7929 5.8589 12.396 6.81391 12.9604 7.79507C13.0749 7.99416 13.187 8.19289 13.2964 8.39112C14.5193 7.90993 15.5296 7.30281 16.3438 6.62486C16.6731 6.35063 16.9383 6.093 17.1403 5.86972C15.7501 4.70277 13.9571 4 12 4C11.524 4 11.0576 4.04158 10.6044 4.1213ZM4.25266 9.99755C4.83145 9.98452 5.48467 9.94941 6.29303 9.87518C7.90024 9.72758 9.54141 9.46249 11.1549 9.05274C10.5719 8.03721 9.93888 7.02331 9.29452 6.05378C8.98479 5.58775 8.68357 5.14992 8.45484 4.82642C6.39541 5.84613 4.83794 7.72658 4.25266 9.99755ZM5.78366 17.036C6.17111 16.4693 6.68061 15.8314 7.35797 15.1374C8.81199 13.6478 10.5286 12.4878 12.5139 11.8473C12.5417 11.8391 12.5604 11.8336 12.576 11.829C12.411 11.4651 12.2562 11.1405 12.1003 10.8342C10.2643 11.3687 8.3303 11.703 6.40279 11.8762C5.46319 11.9606 4.62005 11.9981 4 12.0044C4.00102 13.9112 4.66915 15.662 5.78366 17.036ZM15.0045 19.4166C14.9001 18.8745 14.7669 18.2706 14.5899 17.574C14.2689 16.3112 13.8668 15.012 13.373 13.7078C11.3712 14.4343 9.77574 15.4974 8.54309 16.7649C7.94904 17.3757 7.51244 17.9537 7.22642 18.4203C8.55892 19.4127 10.2109 20 12 20C13.0626 20 14.0769 19.7928 15.0045 19.4166ZM16.8778 18.3414C18.4073 17.1632 19.4985 15.444 19.8652 13.4703C19.5253 13.3865 19.094 13.3005 18.6196 13.2346C17.5756 13.0897 16.5014 13.0655 15.4409 13.2018C15.8933 14.4764 16.2642 15.7332 16.5608 16.9361C16.6903 17.4614 16.7958 17.9358 16.8778 18.3414ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22Z"
+                    fill="white" />
+                </svg>
+
+              </a>
+              <a href="#"
+                class="bg-[#56614C] hover:bg-[#BD8600] p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.5 11C8.60457 11 9.5 10.1046 9.5 9C9.5 7.89543 8.60457 7 7.5 7H3V11H7.5ZM8.5 13H3V17H8.5C9.60457 17 10.5 16.1046 10.5 15C10.5 13.8954 9.60457 13 8.5 13ZM10.5632 11.5725C11.7239 12.2726 12.5 13.5457 12.5 15C12.5 17.2091 10.7091 19 8.5 19H1V5H7.5C9.70914 5 11.5 6.79086 11.5 9C11.5 9.97964 11.1478 10.877 10.5632 11.5725ZM15.5 6H21V7.5H15.5V6ZM23 14.5H15.5V14.75C15.5 16.2688 16.7312 17.5 18.25 17.5C19.3187 17.5 20.245 16.8904 20.7001 16H22.8338C22.2851 18.0169 20.4407 19.5 18.25 19.5C15.6266 19.5 13.5 17.3734 13.5 14.75V13.25C13.5 10.6266 15.6266 8.5 18.25 8.5C20.8734 8.5 23 10.6266 23 13.25V14.5ZM20.8965 12.5C20.57 11.3457 19.5088 10.5 18.25 10.5C16.9912 10.5 15.93 11.3457 15.6035 12.5H20.8965Z"
+                    fill="white" />
+                </svg>
+
+              </a>
+              <a href="#"
+                class="bg-[#56614C] hover:bg-[#BD8600] p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M13 9H17.5L17 11H13V20H11V11H7V9H11V7.12777C11 5.34473 11.1857 4.69816 11.5343 4.04631C11.8829 3.39446 12.3945 2.88288 13.0463 2.53427C13.6982 2.18565 14.3447 2 16.1278 2C16.6498 2 17.1072 2.05 17.5 2.15V4H16.1278C14.8041 4 14.401 4.07784 13.9895 4.29789C13.6862 4.46011 13.4601 4.68619 13.2979 4.98951C13.0778 5.40096 13 5.80407 13 7.12777V9Z"
+                    fill="white" />
+                </svg>
+
+
+              </a>
+              <a href="#"
+                class="bg-[#56614C] hover:bg-[#BD8600] p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 9.55005C12.9171 8.61327 14.1111 8 15.5 8C18.5375 8 21 10.4624 21 13.5V21H19V13.5C19 11.567 17.433 10 15.5 10C13.567 10 12 11.567 12 13.5V21H10V8.5H12V9.55005ZM5 6.5C4.17157 6.5 3.5 5.82843 3.5 5C3.5 4.17157 4.17157 3.5 5 3.5C5.82842 3.5 6.5 4.17157 6.5 5C6.5 5.82843 5.82842 6.5 5 6.5ZM4 8.5H6V21H4V8.5Z"
+                    fill="white" />
+                </svg>
+
+              </a>
+            </div>
+            <!-- Copyright -->
+            <div class="mt-1 flex justify-center md:hidden ">
+              <p class="text-[#759187] text-sm text-center lg:text-left">© 2026 PIXXEN</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <div
+      class="bg-gradient-to-b from-[#36432A] to-[#BD8600] sticky -z-10 bottom-0 left-0 w-full  flex justify-center items-end">
+      <div class="flex justify-center text-center">
+        <img src="assets/images/salon-spa-footer-logo.svg" class="img-fluid w-full object-contain" alt="footerlogo">
+      </div>
+    </div>
+  </footer>
+  <!-- footer section end -->
+
+
+
+
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenLite.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js">
+  </script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
