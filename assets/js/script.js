@@ -1716,3 +1716,52 @@ document.querySelectorAll('.saloneandspas-spacification').forEach(row => {
 })();
 
 // salons and spas page js end
+
+
+
+// weeding testimonial splide js
+document.addEventListener('DOMContentLoaded', function () {
+  const testimonialCarousel = document.querySelector('#weeding-testimonial-carousel');
+
+  if (testimonialCarousel) {
+    new Splide('#weeding-testimonial-carousel', {
+      type: 'loop',
+
+      perPage: 2,
+      perMove: 1,
+      gap: '32px',
+
+      arrows: true,
+      pagination: false,
+
+      autoplay: true,
+      interval: 4000,
+      pauseOnHover: true,
+      pauseOnFocus: false,
+      resetProgress: false,
+
+      classes: {
+        arrows: 'splide__arrows weeding-arrows',
+        arrow: 'splide__arrow weeding-arrow',
+        prev: 'splide__arrow--prev weeding-arrow-prev',
+        next: 'splide__arrow--next weeding-arrow-next',
+      },
+
+      breakpoints: {
+        1024: {
+          gap: '16px',
+        },
+
+        768: {
+          perPage: 1,
+          gap: '16px',
+          autoplay: true,
+          interval: 3000,
+          arrows: true,
+          pagination: false,
+        },
+      },
+
+    }).mount();
+  }
+});
