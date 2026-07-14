@@ -1734,11 +1734,11 @@ document.addEventListener('DOMContentLoaded', function () {
       arrows: true,
       pagination: false,
 
-      autoplay: true,
-      interval: 4000,
-      pauseOnHover: true,
-      pauseOnFocus: false,
-      resetProgress: false,
+      autoScroll: {
+        speed: 1.2,
+        pauseOnHover: true,
+        pauseOnFocus: false,
+      },
 
       classes: {
         arrows: 'splide__arrows weeding-arrows',
@@ -1755,13 +1755,10 @@ document.addEventListener('DOMContentLoaded', function () {
         768: {
           perPage: 1,
           gap: '16px',
-          autoplay: true,
-          interval: 3000,
-          arrows: true,
-          pagination: false,
+          autoScroll: false, // Disable continuous autoplay on mobile
         },
       },
 
-    }).mount();
+    }).mount(window.splide.Extensions);
   }
 });
