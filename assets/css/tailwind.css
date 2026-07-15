@@ -688,7 +688,19 @@ line-height: 120%; /* 24px */
   transform: translateX(80px);
 }
 
+@media (max-width: 400px) {
+  .weeding-bottom-rowlist {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+  }
 
+  .weeding-bottom-rowlist > div {
+    width: 100%;
+  }
+}
 /* Mobile arrows bottom center */
 @media (max-width: 768px) {
 
